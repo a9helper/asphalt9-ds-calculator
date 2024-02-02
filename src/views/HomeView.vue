@@ -1,26 +1,28 @@
 <script setup lang="ts">
-import eventData from './eventData'
 import dp from './dp'
 
-// import axios from 'axios'
+import axios from 'axios'
+import useFormStore from './form.store'
 
-// onMounted(async () => {
-//   const data = await axios(
-//     'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
-//   )
-//   console.log(data)
-// })
-const form = ref({
-  chapter: 2,
-  stage: 2,
-  stageSpDone: '',
-  danger1: true,
-  danger2: true,
-  danger3: true,
+const eventData = ref<DSData>({
+  _id: 'al-cc850',
+  chapters: [],
 })
 
+const formStore = useFormStore()
+
+const { form } = storeToRefs(formStore)
+
+const getEventData = async () => {
+  const res = await axios.get<DSData[]>(
+    'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
+  )
+  const target = res.data.find((item) => item._id === 'al-cc850')
+  return target
+}
+
 const currentChapter = computed(() => {
-  return eventData.chapters.find(
+  return eventData.value.chapters.find(
     (chapter) => chapter.chapter === form.value.chapter
   )
 })
@@ -32,7 +34,7 @@ const currentStage = computed(() => {
 })
 
 watchEffect(() => {
-  if (!currentStage.value && form.value.stage != 1) {
+  if (currentChapter.value && !currentStage.value && form.value.stage != 1) {
     form.value.stage = 1
   }
 })
@@ -68,10 +70,13 @@ const userTasks = computed(() => {
   return res
 })
 
-const dpValid = computed(() => currentStage.value && userTasks.value.length > 0)
+const dpValid = computed(
+  () => currentChapter.value && currentStage.value && userTasks.value.length > 0
+)
 
 const result = ref<ReturnType<typeof dp>>()
 
+const errorNoChapter = ref(false)
 const errorNoStage = ref(false)
 const errorNoTasks = ref(false)
 const errorNoTasksCount = ref(0)
@@ -99,7 +104,10 @@ watch(
   () => [form],
   async () => {
     await nextTick()
-    if (!currentStage.value) {
+    if (!currentChapter.value) {
+      errorNoChapter.value = true
+      return
+    } else if (!currentStage.value) {
       errorNoStage.value = true
       return
     } else if (userTasks.value.length === 0) {
@@ -119,9 +127,28 @@ watch(
   }
 )
 
-onMounted(() => {
+const snackRefreshSuccess = ref(false)
+const snackRefreshError = ref(false)
+onMounted(async () => {
+  const target = await getEventData()
+  if (target) {
+    eventData.value = target
+    snackRefreshSuccess.value = true
+  } else {
+    snackRefreshError.value = true
+  }
   runDP()
 })
+
+const refresh = async () => {
+  const target = await getEventData()
+  if (target) {
+    eventData.value = target
+    snackRefreshSuccess.value = true
+  } else {
+    snackRefreshError.value = true
+  }
+}
 
 const getPackCount = (task: Task) => {
   return (
@@ -158,30 +185,25 @@ const getLimitText = (limit: string | number) => {
 
 <template>
   <div class="page">
-    <div class="select-chapter-and-stage">
-      <var-select placeholder="章节选择" v-model="form.chapter">
-        <var-option
-          :label="chapter.title"
-          :value="chapter.chapter"
-          v-for="chapter in eventData.chapters" />
-      </var-select>
+    <div class="select-chapter-and-stage result-card">
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px">
+        <var-select placeholder="章节选择" v-model="form.chapter">
+          <var-option :label="chapter.title" :value="chapter.chapter" v-for="chapter in eventData.chapters" />
+        </var-select>
+
+        <var-button type="primary" @click="refresh">刷新数据</var-button>
+      </div>
       <var-radio-group v-model="form.stage">
-        <var-radio
-          :checked-value="stage.stage"
-          v-for="stage in currentChapter?.stages"
-          >第{{ stage.stage }}关</var-radio
-        >
+        <var-radio :checked-value="stage.stage" v-for="stage in currentChapter?.stages">第{{ stage.stage }}关</var-radio>
       </var-radio-group>
     </div>
-    <var-input
-      type="number"
-      placeholder="本关已完成SP，可不填，默认为0"
-      v-model="form.stageSpDone"></var-input>
-    <div>
-      本关剩余 SP 为 {{ currentStage?.sp }} - {{ form.stageSpDone || 0 }} =
-      {{ (currentStage?.sp || 0) - Number(form.stageSpDone) }}
+    <div class="result-card">
+      <var-input type="number" placeholder="本关已完成SP，可不填，默认为0" v-model="form.stageSpDone"></var-input>
+      <div>
+        本关剩余 SP 为 {{ currentStage?.sp }} - {{ form.stageSpDone || 0 }} =
+        {{ (currentStage?.sp || 0) - Number(form.stageSpDone) }}
+      </div>
     </div>
-    <div></div>
     <div class="task-module task-module-3" v-if="currentTask3?.length === 3">
       <div class="danger-label">
         危险3
@@ -190,10 +212,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask3"
-          :class="{ 'task-selected': form.danger3 }">
+        <div class="task" v-for="task in currentTask3" :class="{ 'task-selected': form.danger3 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -216,10 +235,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask2"
-          :class="{ 'task-selected': form.danger2 }">
+        <div class="task" v-for="task in currentTask2" :class="{ 'task-selected': form.danger2 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -242,10 +258,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask1"
-          :class="{ 'task-selected': form.danger1 }">
+        <div class="task" v-for="task in currentTask1" :class="{ 'task-selected': form.danger1 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -260,9 +273,7 @@ const getLimitText = (limit: string | number) => {
       </div>
     </div>
 
-    <div
-      class="task-module task-module-0"
-      v-if="(currentTask0?.length || 0) > 0">
+    <div class="task-module task-module-0" v-if="(currentTask0?.length || 0) > 0">
       <div class="danger-label">危险0</div>
       <div class="task-list">
         <div class="task task-selected" v-for="task in currentTask0">
@@ -286,6 +297,8 @@ const getLimitText = (limit: string | number) => {
     > -->
 
     <!-- <div style="white-space: pre-wrap">{{ result }}</div> -->
+    <var-snackbar type="success" v-model:show="snackRefreshSuccess">最新</var-snackbar><var-snackbar type="error"
+      v-model:show="snackRefreshError">失败了</var-snackbar>
     <div class="result-card">
       <div class="result-card-title">这关怎么打 ❓</div>
       <div v-if="dpValid">
@@ -293,8 +306,9 @@ const getLimitText = (limit: string | number) => {
           <span class="result-number result-number-54">{{
             task.taskCount
           }}</span>
-          把 {{ task.sp }} SP，危险 {{ task.danger }}，每把
-          {{ task.packCount }} 包；
+          把 {{ task.sp }} SP，危险 {{ task.danger }}，{{
+            task.taskCount === 1 ? '这' : '每'
+          }}把 {{ task.packCount }} 包；
         </div>
         <div>
           最后 <span class="result-number result-number-54">1</span> 把
@@ -318,8 +332,8 @@ const getLimitText = (limit: string | number) => {
         <div v-if="errorNoTasks">
           {{
             errorNoTasksCount > 9
-              ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
-              : '选择一些危险度再来看看吧'
+            ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
+            : '选择一些危险度再来看看吧'
           }}
         </div>
       </div>
@@ -350,6 +364,7 @@ const getLimitText = (limit: string | number) => {
 .color-54 {
   color: #ff0054;
 }
+
 .task {
   &-list {
     display: grid;
@@ -357,23 +372,29 @@ const getLimitText = (limit: string | number) => {
     gap: 8px;
     align-items: center;
   }
+
   background: #e1e1e1;
   border-radius: 8px;
   padding: 8px;
+
   &-selected {
     background-color: #9cbcff;
   }
+
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+
   &-sp-sc {
     font-size: 12px;
   }
+
   &-danger {
     text-align: end;
     font-weight: bold;
     font-size: 20px;
   }
+
   &-count {
     text-align: center;
     font-weight: bold;
@@ -390,8 +411,11 @@ const getLimitText = (limit: string | number) => {
 .result-number {
   color: #3a7afe;
   font-size: 20px;
+  font-weight: bold;
+
   &-54 {
     color: #ff0054;
+    font-weight: bold;
   }
 }
 
@@ -403,14 +427,15 @@ const getLimitText = (limit: string | number) => {
 .result-card {
   border: 2px solid #3a7afe;
   border-radius: 8px;
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 8px;
+
   &-title {
     margin-bottom: 1em;
   }
 }
 
-.task-module + .task-module {
+.task-module+.task-module {
   margin-top: 16px;
 }
 

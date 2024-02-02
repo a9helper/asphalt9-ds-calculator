@@ -9,11 +9,13 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarCheckbox: typeof import('@varlet/ui')['_CheckboxComponent']
     VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarOption: typeof import('@varlet/ui')['_OptionComponent']
     VarRadio: typeof import('@varlet/ui')['_RadioComponent']
     VarRadioGroup: typeof import('@varlet/ui')['_RadioGroupComponent']
     VarSelect: typeof import('@varlet/ui')['_SelectComponent']
+    VarSnackbar: typeof import('@varlet/ui')['_SnackbarComponent']
   }
 }
