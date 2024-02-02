@@ -17,6 +17,9 @@ const dp = ({
   tasks.sort((a, b) => {
     // 危险度高，福币少的在后面，尽量选择他们
     if (a.danger === b.danger) {
+      if (a.packCount === b.packCount) {
+        return b.sp - a.sp
+      }
       return b.packCount - a.packCount
     }
     return a.danger - b.danger

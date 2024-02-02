@@ -84,19 +84,38 @@ const eventData: DSData = {
         },
       ],
     },
+    {
+      chapter: 3,
+      title: '危险时刻（雷诺RS）',
+      coinPerPack: 128,
+      stages: [
+        {
+          stage: 1,
+          sp: 17888,
+          tasks: [
+            { danger: 3, sp: 5225, packCount: 10 },
+            { danger: 3, sp: 6050, packCount: 10 },
+            { danger: 3, sp: 5500, packCount: 10 },
+          ],
+        },
+      ],
+    },
   ],
 }
 
-// for (let chapter of eventData.chapters) {
-//   for (let stage of chapter.stages) {
-//     stage.tasks.sort((a, b) => {
-//       // 危险度高，福币少的在后面，尽量选择他们
-//       if (a.danger === b.danger) {
-//         return b.packCount - a.packCount
-//       }
-//       return a.danger - b.danger
-//     })
-//   }
-// }
+for (let chapter of eventData.chapters) {
+  for (let stage of chapter.stages) {
+    stage.tasks.sort((a, b) => {
+      // 危险度高，福币少的在后面，尽量选择他们
+      if (a.danger === b.danger) {
+        if (a.packCount === b.packCount) {
+          return a.sp - b.sp
+        }
+        return a.packCount - b.packCount
+      }
+      return a.danger - b.danger
+    })
+  }
+}
 
 export default eventData
