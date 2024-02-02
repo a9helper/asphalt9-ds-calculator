@@ -7,6 +7,7 @@ interface Task {
 interface Stage {
   stage: number
   sp: number // 当前关卡所有sp
+  limit: number[] | string[]
   //spFinish: number //完成当前的sp，等于下一关解锁需要的sp
   tasks: Task[]
 }
@@ -20,6 +21,7 @@ interface Chapter {
 
 interface DSData {
   chapters: Chapter[]
+  _id: string
 }
 
 type DPRes = Task & {

@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import eventData from './eventData'
 import dp from './dp'
+
+// import axios from 'axios'
+
+// onMounted(async () => {
+//   const data = await axios(
+//     'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
+//   )
+//   console.log(data)
+// })
 const form = ref({
   chapter: 2,
   stage: 2,
@@ -137,6 +146,14 @@ const getRandomKun = () => {
   const kun = ['🐔', '🏀', '💃🏽', '🎤']
   return kun[Math.floor(Math.random() * kun.length)]
 }
+
+const getLimitText = (limit: string | number) => {
+  if (typeof limit === 'string') {
+    return limit
+  } else {
+    return `${limit}星车辆`
+  }
+}
 </script>
 
 <template>
@@ -166,7 +183,12 @@ const getRandomKun = () => {
     </div>
     <div></div>
     <div class="task-module task-module-3" v-if="currentTask3?.length === 3">
-      <div class="danger-label">危险3</div>
+      <div class="danger-label">
+        危险3
+        <span class="limit" v-if="currentStage?.limit?.[2]">{{
+          getLimitText(currentStage?.limit?.[2])
+        }}</span>
+      </div>
       <div class="task-list">
         <div
           class="task"
@@ -187,7 +209,12 @@ const getRandomKun = () => {
     </div>
 
     <div class="task-module task-module-2" v-if="currentTask2?.length === 3">
-      <div class="danger-label">危险2</div>
+      <div class="danger-label">
+        危险2
+        <span class="limit" v-if="currentStage?.limit?.[1]">{{
+          getLimitText(currentStage?.limit?.[1])
+        }}</span>
+      </div>
       <div class="task-list">
         <div
           class="task"
@@ -208,7 +235,12 @@ const getRandomKun = () => {
     </div>
 
     <div class="task-module task-module-1" v-if="currentTask1?.length === 3">
-      <div class="danger-label">危险1</div>
+      <div class="danger-label">
+        危险1
+        <span class="limit" v-if="currentStage?.limit?.[0]">{{
+          getLimitText(currentStage?.limit?.[0])
+        }}</span>
+      </div>
       <div class="task-list">
         <div
           class="task"
@@ -380,5 +412,10 @@ const getRandomKun = () => {
 
 .task-module + .task-module {
   margin-top: 16px;
+}
+
+.limit {
+  padding-left: 1em;
+  color: #ff0054;
 }
 </style>

@@ -1,4 +1,5 @@
 const eventData: DSData = {
+  _id: 'al-cc850',
   chapters: [
     {
       chapter: 1,
@@ -8,16 +9,19 @@ const eventData: DSData = {
         {
           stage: 1,
           sp: 888,
+          limit: [0, 0, 0],
           tasks: [{ danger: 0, sp: 888, packCount: 8 }],
         },
         {
           stage: 2,
           sp: 2388,
+          limit: [0, 0, 0],
           tasks: [{ danger: 0, sp: 2388, packCount: 8 }],
         },
         {
           stage: 3,
           sp: 4724,
+          limit: [0, 0, 0],
           tasks: [
             { danger: 0, sp: 2750, packCount: 8 },
             { danger: 0, sp: 2500, packCount: 8 },
@@ -34,6 +38,7 @@ const eventData: DSData = {
         {
           stage: 1,
           sp: 7888,
+          limit: [0, 0, 1],
           tasks: [
             { danger: 3, sp: 4063, packCount: 7 },
             { danger: 3, sp: 4277, packCount: 8 },
@@ -43,6 +48,7 @@ const eventData: DSData = {
         {
           stage: 2,
           sp: 7888,
+          limit: [0, 1, 2],
           tasks: [
             { danger: 2, sp: 1884, packCount: 6 },
             { danger: 2, sp: 1983, packCount: 7 },
@@ -55,6 +61,7 @@ const eventData: DSData = {
         {
           stage: 3,
           sp: 9888,
+          limit: [1, 2, 3],
           tasks: [
             { danger: 1, sp: 812, packCount: 3 },
             { danger: 1, sp: 855, packCount: 3 },
@@ -70,6 +77,7 @@ const eventData: DSData = {
         {
           stage: 4,
           sp: 12570,
+          limit: [2, 3, 4],
           tasks: [
             { danger: 1, sp: 812, packCount: 4 },
             { danger: 1, sp: 855, packCount: 4 },
@@ -92,10 +100,11 @@ const eventData: DSData = {
         {
           stage: 1,
           sp: 17888,
+          limit: [0, 0, 1],
           tasks: [
             { danger: 3, sp: 5225, packCount: 10 },
-            { danger: 3, sp: 6050, packCount: 10 },
             { danger: 3, sp: 5500, packCount: 10 },
+            { danger: 3, sp: 6050, packCount: 10 },
           ],
         },
       ],
