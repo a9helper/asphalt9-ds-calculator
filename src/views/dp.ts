@@ -18,7 +18,7 @@ const dp = ({
     // 危险度高，福币少的在后面，尽量选择他们
     if (a.danger === b.danger) {
       if (a.packCount === b.packCount) {
-        return b.sp - a.sp
+        return a.sp - b.sp //升序，当危险1相同时，解决方案是尽量大的，但是车手可以尽量小。
       }
       return b.packCount - a.packCount
     }

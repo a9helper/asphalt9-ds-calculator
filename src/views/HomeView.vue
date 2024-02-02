@@ -18,6 +18,22 @@ const getEventData = async () => {
     'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
   )
   const target = res.data.find((item) => item._id === 'al-cc850')
+  if (target) {
+    for (let chapter of target.chapters) {
+      for (let stage of chapter.stages) {
+        stage.tasks.sort((a, b) => {
+          // 用于用户展示
+          if (a.danger === b.danger) {
+            if (a.packCount === b.packCount) {
+              return a.sp - b.sp
+            }
+            return a.packCount - b.packCount
+          }
+          return a.danger - b.danger
+        })
+      }
+    }
+  }
   return target
 }
 
@@ -133,7 +149,7 @@ onMounted(async () => {
   const target = await getEventData()
   if (target) {
     eventData.value = target
-    snackRefreshSuccess.value = true
+    // snackRefreshSuccess.value = true
   } else {
     snackRefreshError.value = true
   }
