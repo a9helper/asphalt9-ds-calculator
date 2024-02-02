@@ -259,6 +259,11 @@
   resolved "https://registry.npmmirror.com/@varlet/shared/-/shared-2.22.1.tgz#161797b0d260424aa238baf803d41cdf2d9c9e39"
   integrity sha512-PAAUAlVwLEYF5MRoOAnj7LMGc3MdC8oPX5+qHrr8xSN9HWJpqVAgFBDiEH38Qy8E17aO5oUyVtasKmqMLUJsew==
 
+"@varlet/touch-emulator@^2.22.1":
+  version "2.22.1"
+  resolved "https://registry.npmmirror.com/@varlet/touch-emulator/-/touch-emulator-2.22.1.tgz#1d53fa2de0d86034dd89c1bc068344248f55763b"
+  integrity sha512-O/prnSUUg0Lu6kG5Vj8683FhIB+82EfADFo31M8wel57447gg9EDPHa6mZoS+UnwFQGsC8HleFiFUlLoSYSkvg==
+
 "@varlet/ui@^2.22.1":
   version "2.22.1"
   resolved "https://registry.npmmirror.com/@varlet/ui/-/ui-2.22.1.tgz#5c12772ffd5fd53fa4fa4ecd99c19bcc459423e8"

@@ -1,5 +1,5 @@
 import './assets/main.css'
-
+import '@varlet/touch-emulator'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

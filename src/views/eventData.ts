@@ -8,12 +8,20 @@ const eventData: DSData = {
         {
           stage: 1,
           sp: 888,
+          tasks: [{ danger: 0, sp: 888, packCount: 8 }],
+        },
+        {
+          stage: 2,
+          sp: 2388,
+          tasks: [{ danger: 0, sp: 2388, packCount: 8 }],
+        },
+        {
+          stage: 3,
+          sp: 4724,
           tasks: [
-            {
-              danger: 0,
-              sp: 888,
-              packCount: 8,
-            },
+            { danger: 0, sp: 2750, packCount: 8 },
+            { danger: 0, sp: 2500, packCount: 8 },
+            { danger: 0, sp: 2375, packCount: 8 },
           ],
         },
       ],
@@ -60,7 +68,7 @@ const eventData: DSData = {
           ],
         },
         {
-          stage: 3,
+          stage: 4,
           sp: 12570,
           tasks: [
             { danger: 1, sp: 812, packCount: 4 },
@@ -78,5 +86,17 @@ const eventData: DSData = {
     },
   ],
 }
+
+// for (let chapter of eventData.chapters) {
+//   for (let stage of chapter.stages) {
+//     stage.tasks.sort((a, b) => {
+//       // 危险度高，福币少的在后面，尽量选择他们
+//       if (a.danger === b.danger) {
+//         return b.packCount - a.packCount
+//       }
+//       return a.danger - b.danger
+//     })
+//   }
+// }
 
 export default eventData

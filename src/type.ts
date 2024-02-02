@@ -21,3 +21,7 @@ interface Chapter {
 interface DSData {
   chapters: Chapter[]
 }
+
+type DPRes = Task & {
+  taskCount: number
+}
