@@ -255,8 +255,21 @@ const getRandomKun = () => {
 
     <!-- <div style="white-space: pre-wrap">{{ result }}</div> -->
     <div class="result-card">
-      <div class="result-card-title">本关战绩！</div>
+      <div class="result-card-title">这关怎么打 ❓</div>
       <div v-if="dpValid">
+        <div v-for="task in result?.res">
+          <span class="result-number result-number-54">{{
+            task.taskCount
+          }}</span>
+          把 {{ task.sp }} SP，危险 {{ task.danger }}，每把
+          {{ task.packCount }} 包；
+        </div>
+        <div>
+          最后 <span class="result-number result-number-54">1</span> 把
+          {{ result?.taskMax.sp }} SP，危险 {{ result?.taskMax.danger }}，这把
+          {{ result?.taskMax.packCount }} 包。
+        </div>
+        <div>本关战绩：</div>
         <div>
           <span class="result-number">{{ result?.taskCountTotal }}</span> 次比赛
         </div>
@@ -281,9 +294,12 @@ const getRandomKun = () => {
     </div>
 
     <div class="result-card">
-      <div class="result-card-title">计算器说明</div>
+      <div class="result-card-title">计算器说明 📕</div>
       <div>
         <div class="color-54">+1 的任务请务必在最后去完成！</div>
+        <div>
+          本计算器使用方法：选择章节和关卡，勾选或取消勾选右侧可参加的危险度，即可获得每种任务所需要的次数了。
+        </div>
         <div>
           车联交流QQ群<span class="color-54"> 891152409 </span>, 本计算器启发于
           浪-Saxon，感谢 浪-喵呜 和其他群友！
@@ -316,7 +332,7 @@ const getRandomKun = () => {
     background-color: #9cbcff;
   }
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   &-sp-sc {
     font-size: 12px;
@@ -342,6 +358,9 @@ const getRandomKun = () => {
 .result-number {
   color: #3a7afe;
   font-size: 20px;
+  &-54 {
+    color: #ff0054;
+  }
 }
 
 .result-invalid {
@@ -357,5 +376,9 @@ const getRandomKun = () => {
   &-title {
     margin-bottom: 1em;
   }
+}
+
+.task-module + .task-module {
+  margin-top: 16px;
 }
 </style>
