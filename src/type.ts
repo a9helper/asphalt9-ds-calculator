@@ -7,7 +7,7 @@ interface Task {
 interface Stage {
   stage: number
   sp: number // 当前关卡所有sp
-  spFinish: number //完成当前的sp，等于下一关解锁需要的sp
+  //spFinish: number //完成当前的sp，等于下一关解锁需要的sp
   tasks: Task[]
 }
 
