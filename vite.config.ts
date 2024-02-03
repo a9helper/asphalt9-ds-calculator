@@ -15,8 +15,7 @@ export default defineConfig({
     port: 4897,
     proxy: {
       '/api': {
-        target:
-          'https://fc-mp-8d1933d1-509e-41b1-8513-478b4c2c761d.next.bspapp.com',
+        target: 'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com',
         changeOrigin: true,
       },
     },

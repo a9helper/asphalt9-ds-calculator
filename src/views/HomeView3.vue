@@ -204,27 +204,17 @@ const getLimitText = (limit: string | number) => {
     <div class="select-chapter-and-stage result-card">
       <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px">
         <var-select placeholder="章节选择" v-model="form.chapter">
-          <var-option
-            :label="chapter.title"
-            :value="chapter.chapter"
-            v-for="chapter in eventData.chapters" />
+          <var-option :label="chapter.title" :value="chapter.chapter" v-for="chapter in eventData.chapters" />
         </var-select>
 
         <var-button type="primary" @click="refresh">刷新数据</var-button>
       </div>
       <var-radio-group v-model="form.stage">
-        <var-radio
-          :checked-value="stage.stage"
-          v-for="stage in currentChapter?.stages"
-          >第{{ stage.stage }}关</var-radio
-        >
+        <var-radio :checked-value="stage.stage" v-for="stage in currentChapter?.stages">第{{ stage.stage }}关</var-radio>
       </var-radio-group>
     </div>
     <div class="result-card">
-      <var-input
-        type="number"
-        placeholder="本关已完成SP，可不填，默认为0"
-        v-model="form.stageSpDone"></var-input>
+      <var-input type="number" placeholder="本关已完成SP，可不填，默认为0" v-model="form.stageSpDone"></var-input>
       <div>
         本关剩余 SP 为 {{ currentStage?.sp }} - {{ form.stageSpDone || 0 }} =
         {{ (currentStage?.sp || 0) - Number(form.stageSpDone) }}
@@ -238,10 +228,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask3"
-          :class="{ 'task-selected': form.danger3 }">
+        <div class="task" v-for="task in currentTask3" :class="{ 'task-selected': form.danger3 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -264,10 +251,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask2"
-          :class="{ 'task-selected': form.danger2 }">
+        <div class="task" v-for="task in currentTask2" :class="{ 'task-selected': form.danger2 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -290,10 +274,7 @@ const getLimitText = (limit: string | number) => {
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask1"
-          :class="{ 'task-selected': form.danger1 }">
+        <div class="task" v-for="task in currentTask1" :class="{ 'task-selected': form.danger1 }">
           <div class="task-sp-sc">
             <div class="task-sp">SP {{ task.sp }}</div>
             <div class="task-sc">SC {{ task.packCount }}</div>
@@ -308,9 +289,7 @@ const getLimitText = (limit: string | number) => {
       </div>
     </div>
 
-    <div
-      class="task-module task-module-0"
-      v-if="(currentTask0?.length || 0) > 0">
+    <div class="task-module task-module-0" v-if="(currentTask0?.length || 0) > 0">
       <div class="danger-label">危险0</div>
       <div class="task-list">
         <div class="task task-selected" v-for="task in currentTask0">
@@ -334,11 +313,8 @@ const getLimitText = (limit: string | number) => {
     > -->
 
     <!-- <div style="white-space: pre-wrap">{{ result }}</div> -->
-    <var-snackbar type="success" v-model:show="snackRefreshSuccess"
-      >最新</var-snackbar
-    ><var-snackbar type="error" v-model:show="snackRefreshError"
-      >失败了</var-snackbar
-    >
+    <var-snackbar type="success" v-model:show="snackRefreshSuccess">最新</var-snackbar><var-snackbar type="error"
+      v-model:show="snackRefreshError">失败了</var-snackbar>
     <div class="result-card">
       <div class="result-card-title">这关怎么打 ❓</div>
       <div v-if="dpValid">
@@ -372,8 +348,8 @@ const getLimitText = (limit: string | number) => {
         <div v-if="errorNoTasks">
           {{
             errorNoTasksCount > 9
-              ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
-              : '选择一些危险度再来看看吧'
+            ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
+            : '选择一些危险度再来看看吧'
           }}
         </div>
       </div>
@@ -475,7 +451,7 @@ const getLimitText = (limit: string | number) => {
   }
 }
 
-.task-module + .task-module {
+.task-module+.task-module {
   margin-top: 16px;
 }
 

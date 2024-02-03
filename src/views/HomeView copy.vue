@@ -13,10 +13,12 @@ const formStore = useFormStore()
 
 const { form } = storeToRefs(formStore)
 
+const axiosInstance = axios.create({
+  baseURL: import.meta.env.VITE_UNI_ROUTER_BASE_URL,
+})
+
 const getEventData = async () => {
-  const res = await axios.get<DSData[]>(
-    'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
-  )
+  const res = await axiosInstance.get<DSData[]>('/api/getDS')
   const target = res.data.find((item) => item._id === 'al-cc850')
   if (target) {
     for (let chapter of target.chapters) {
@@ -25,9 +27,9 @@ const getEventData = async () => {
           // 用于用户展示
           if (a.danger === b.danger) {
             if (a.packCount === b.packCount) {
-              return a.sp - b.sp
+              return b.sp - a.sp
             }
-            return a.packCount - b.packCount
+            return b.packCount - a.packCount
           }
           return a.danger - b.danger
         })
@@ -230,81 +232,102 @@ const getLimitText = (limit: string | number) => {
         {{ (currentStage?.sp || 0) - Number(form.stageSpDone) }}
       </div>
     </div>
-    <div class="task-module task-module-3" v-if="currentTask3?.length === 3">
+    <div
+      class="task-module task-module-3"
+      v-if="currentTask3?.length === 3"
+      @click="form.danger3 = !form.danger3">
       <div class="danger-label">
+        <var-checkbox v-model="form.danger3" readonly></var-checkbox>
         危险3
         <span class="limit" v-if="currentStage?.limit?.[2]">{{
           getLimitText(currentStage?.limit?.[2])
         }}</span>
       </div>
-      <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask3"
-          :class="{ 'task-selected': form.danger3 }">
-          <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+      <div class="task-list" :class="{ 'task-list-selected': form.danger3 }">
+        <div class="task" v-for="task in currentTask3">
+          <div>
+            <span class="task-count">
+              {{ !dpValid ? getRandomKun() : getPackCount(task) }}</span
+            ><span class="color-54 task-last">{{
+              dpValid && isTaskMax(task) ? '+1' : ''
+            }}</span>
+            把
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
-          <div class="task-count">
-            {{ !dpValid ? getRandomKun() : getPackCount(task)
-            }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
+
+          <div>
+            <span class="task-sp-sc">{{ task.sp }}</span> SP ，
+          </div>
+          <div>
+            每把 <span class="task-sp-sc"> {{ task.packCount }}</span>
+            包
           </div>
         </div>
-        <var-checkbox v-model="form.danger3"></var-checkbox>
       </div>
     </div>
 
-    <div class="task-module task-module-2" v-if="currentTask2?.length === 3">
+    <div
+      class="task-module task-module-2"
+      v-if="currentTask2?.length === 3"
+      @click="form.danger2 = !form.danger2">
       <div class="danger-label">
+        <var-checkbox v-model="form.danger2"></var-checkbox>
         危险2
         <span class="limit" v-if="currentStage?.limit?.[1]">{{
           getLimitText(currentStage?.limit?.[1])
         }}</span>
       </div>
-      <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask2"
-          :class="{ 'task-selected': form.danger2 }">
-          <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+      <div class="task-list" :class="{ 'task-list-selected': form.danger2 }">
+        <div class="task" v-for="task in currentTask2">
+          <div>
+            <span class="task-count">
+              {{ !dpValid ? getRandomKun() : getPackCount(task) }}</span
+            ><span class="color-54 task-last">{{
+              dpValid && isTaskMax(task) ? '+1' : ''
+            }}</span>
+            把
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
-          <div class="task-count">
-            {{ !dpValid ? getRandomKun() : getPackCount(task)
-            }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
+
+          <div>
+            <span class="task-sp-sc">{{ task.sp }}</span> SP ，
+          </div>
+          <div>
+            每把 <span class="task-sp-sc"> {{ task.packCount }}</span>
+            包
           </div>
         </div>
-        <var-checkbox v-model="form.danger2"></var-checkbox>
       </div>
     </div>
 
-    <div class="task-module task-module-1" v-if="currentTask1?.length === 3">
+    <div
+      class="task-module task-module-1"
+      v-if="currentTask1?.length === 3"
+      @click="form.danger1 = !form.danger1">
       <div class="danger-label">
+        <var-checkbox v-model="form.danger1"></var-checkbox>
         危险1
         <span class="limit" v-if="currentStage?.limit?.[0]">{{
           getLimitText(currentStage?.limit?.[0])
         }}</span>
       </div>
-      <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask1"
-          :class="{ 'task-selected': form.danger1 }">
-          <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+      <div class="task-list" :class="{ 'task-list-selected': form.danger1 }">
+        <div class="task" v-for="task in currentTask1">
+          <div>
+            <span class="task-count">
+              {{ !dpValid ? getRandomKun() : getPackCount(task) }}</span
+            ><span class="color-54 task-last">{{
+              dpValid && isTaskMax(task) ? '+1' : ''
+            }}</span>
+            把
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
-          <div class="task-count">
-            {{ !dpValid ? getRandomKun() : getPackCount(task)
-            }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
+
+          <div>
+            <span class="task-sp-sc">{{ task.sp }}</span> SP ，
+          </div>
+          <div>
+            每把 <span class="task-sp-sc"> {{ task.packCount }}</span>
+            包
           </div>
         </div>
-        <var-checkbox v-model="form.danger1"></var-checkbox>
       </div>
     </div>
 
@@ -312,16 +335,22 @@ const getLimitText = (limit: string | number) => {
       class="task-module task-module-0"
       v-if="(currentTask0?.length || 0) > 0">
       <div class="danger-label">危险0</div>
-      <div class="task-list">
-        <div class="task task-selected" v-for="task in currentTask0">
-          <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+      <div class="task-list task-list-selected">
+        <div class="task" v-for="task in currentTask0">
+          <div>
+            <span class="task-count"> {{ getPackCount(task) }}</span
+            ><span class="color-54 task-last">{{
+              isTaskMax(task) ? '+1' : ''
+            }}</span>
+            把
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
-          <div class="task-count">
-            {{ !dpValid ? '🎤' : getPackCount(task)
-            }}{{ isTaskMax(task) ? '+1' : '' }}
+
+          <div>
+            <span class="task-sp-sc">{{ task.sp }}</span> SP ，
+          </div>
+          <div>
+            每把 <span class="task-sp-sc"> {{ task.packCount }}</span>
+            包
           </div>
         </div>
       </div>
@@ -407,26 +436,30 @@ const getLimitText = (limit: string | number) => {
 
 .task {
   &-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    gap: 8px;
-    align-items: center;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr auto;
+    // gap: 8px;
+    // align-items: center;
+    background: #e1e1e1;
+    &-selected {
+      background-color: #bed3ff;
+    }
+    border-radius: 8px;
   }
 
-  background: #e1e1e1;
-  border-radius: 8px;
   padding: 8px;
-
-  &-selected {
-    background-color: #9cbcff;
+  & + & {
+    border-top: 1px solid #fff;
   }
 
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
+  grid-template-columns: 100px 100px 1fr;
+  line-height: 24px;
+  // align-items: center;
 
   &-sp-sc {
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   &-danger {
@@ -439,8 +472,13 @@ const getLimitText = (limit: string | number) => {
     text-align: center;
     font-weight: bold;
     // padding: 2px 0 4px 0;
-    font-size: 36px;
+    font-size: 24px;
     grid-column: 1 / span 2;
+  }
+
+  &-last {
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 
