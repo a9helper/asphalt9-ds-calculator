@@ -170,6 +170,68 @@ const eventData: DSData = {
         },
       ],
     },
+    {
+      chapter: 4,
+      title: '大难临头（AM Vantage）',
+      coinPerPack: 168,
+      stages: [
+        {
+          stage: 1,
+          sp: 30888,
+          limit: [0, 0, 1],
+          tasks: [
+            { danger: 3, sp: 6270, packCount: 12 },
+            { danger: 3, sp: 6600, packCount: 12 },
+            { danger: 3, sp: 7260, packCount: 12 },
+          ],
+        },
+        {
+          stage: 2,
+          sp: 32888,
+          limit: [0, 1, 2],
+          tasks: [
+            { danger: 3, sp: 6270, packCount: 18 },
+            { danger: 3, sp: 6600, packCount: 20 },
+            { danger: 3, sp: 7260, packCount: 22 },
+            { danger: 2, sp: 3021, packCount: 6 },
+            { danger: 2, sp: 3180, packCount: 7 },
+            { danger: 2, sp: 3498, packCount: 8 },
+          ],
+        },
+        {
+          stage: 3,
+          sp: 36888,
+          limit: [1, 2, 3],
+          tasks: [
+            { danger: 3, sp: 6270, packCount: 20 },
+            { danger: 3, sp: 6600, packCount: 22 },
+            { danger: 3, sp: 7260, packCount: 25 },
+            { danger: 2, sp: 3021, packCount: 8 },
+            { danger: 2, sp: 3180, packCount: 9 },
+            { danger: 2, sp: 3498, packCount: 10 },
+            { danger: 1, sp: 1539, packCount: 3 },
+            { danger: 1, sp: 1620, packCount: 3 },
+            { danger: 1, sp: 1782, packCount: 3 },
+          ],
+        },
+        {
+          stage: 4,
+          sp: 36888,
+          limit: [2, 3, 4],
+          tasks: [
+            { danger: 3, sp: 6270, packCount: 22 },
+            { danger: 3, sp: 6600, packCount: 23 },
+            { danger: 3, sp: 7260, packCount: 25 },
+            { danger: 2, sp: 3021, packCount: 9 },
+            { danger: 2, sp: 3180, packCount: 10 },
+            { danger: 2, sp: 3498, packCount: 11 },
+            { danger: 1, sp: 1539, packCount: 4 },
+            { danger: 1, sp: 1620, packCount: 4 },
+            { danger: 1, sp: 1782, packCount: 4 },
+          ],
+        },
+      ],
+    },
   ],
 }
 
