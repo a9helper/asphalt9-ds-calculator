@@ -3,7 +3,10 @@ import { fileURLToPath, URL } from 'node:url'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 // import { visualizer } from 'rollup-plugin-visualizer'
-import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+import {
+  VarletUIResolver,
+  ElementPlusResolver,
+} from 'unplugin-vue-components/resolvers'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -25,11 +28,14 @@ export default defineConfig({
     // vueJsx(),
     AutoImport({
       imports: ['vue', 'vue-router', 'pinia'],
-      resolvers: [VarletUIResolver({ autoImport: true })],
+      resolvers: [
+        VarletUIResolver({ autoImport: true }),
+        ElementPlusResolver(),
+      ],
       dts: 'src/auto-import.d.ts',
     }),
     Components({
-      resolvers: [VarletUIResolver()],
+      resolvers: [VarletUIResolver(), ElementPlusResolver()],
       dts: 'src/components.d.ts',
     }),
     //keep visualizer to the last one
