@@ -107,6 +107,10 @@ const dp = ({
     taskMax.packCount
   const coinTotal = packTotal * coinPerPack
   const taskCountTotal = res.reduce((acc, cur) => acc + cur.taskCount, 0) + 1
+  const lastSP =
+    stage.sp -
+    stageSpDone -
+    res.reduce((acc, cur) => acc + cur.sp * cur.taskCount, 0)
   // const message: string[] = []
   // // console.log(`${chapter.title} 第 ${stageNo} 关攻略：`)
   // for (let i = 0; i < res.length; i++) {
@@ -127,6 +131,7 @@ const dp = ({
     coinTotal,
     taskCountTotal,
     taskMax,
+    lastSP,
   }
 }
 

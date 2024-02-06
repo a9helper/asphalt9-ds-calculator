@@ -202,7 +202,7 @@ const getLimitText = (limit: string | number) => {
   if (typeof limit === 'string') {
     return limit
   } else {
-    return `${limit}星车辆`
+    return `${limit}星及以上车辆请勾选`
   }
 }
 </script>
@@ -212,123 +212,106 @@ const getLimitText = (limit: string | number) => {
     <div class="select-chapter-and-stage result-card">
       <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px">
         <var-select placeholder="章节选择" v-model="form.chapter">
-          <var-option
-            :label="chapter.title"
-            :value="chapter.chapter"
-            v-for="chapter in eventData.chapters" />
+          <var-option :label="chapter.title" :value="chapter.chapter" v-for="chapter in eventData.chapters" />
         </var-select>
 
         <var-button type="primary" @click="refresh">刷新数据</var-button>
       </div>
-      <var-radio-group v-model="form.stage">
-        <var-radio
-          :checked-value="stage.stage"
-          v-for="stage in currentChapter?.stages"
-          >第{{ stage.stage }}关</var-radio
-        >
-      </var-radio-group>
+      <div style="display: flex; gap: 0.5em;align-items: center;margin-top: 8px;">
+        <div>关卡</div>
+        <div class="stage-list">
+          <div class="stage" v-for="stage in currentChapter?.stages"
+            :class="{ 'stage-selected': form.stage === stage.stage }" @click="form.stage = stage.stage">{{ stage.stage
+            }}</div>
+
+        </div>
+      </div>
+
     </div>
     <div class="result-card">
-      <var-input
-        type="number"
-        placeholder="本关已完成SP，可不填，默认为0"
-        v-model="form.stageSpDone"></var-input>
+      <var-input type="number" placeholder="本关已完成SP，可不填，默认为0" v-model="form.stageSpDone"></var-input>
       <div>
         本关剩余 SP 为 {{ currentStage?.sp }} - {{ form.stageSpDone || 0 }} =
         {{ (currentStage?.sp || 0) - Number(form.stageSpDone) }}
       </div>
     </div>
-    <div class="task-module task-module-3" v-if="currentTask3?.length === 3">
+    <div class="task-module task-module-3" v-if="currentTask3?.length === 3" @click="form.danger3 = !form.danger3">
       <div class="danger-label">
-        危险3
+        <var-checkbox v-model="form.danger3" readonly></var-checkbox>
+        <div>危险3</div>
+
         <span class="limit" v-if="currentStage?.limit?.[2]">{{
           getLimitText(currentStage?.limit?.[2])
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask3"
-          :class="{ 'task-selected': form.danger3 }">
+        <div class="task" v-for="task in currentTask3" :class="{ 'task-selected': form.danger3 }">
           <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+            <div class="task-sp">{{ task.sp }}sp</div>
+            <div class="task-sc">{{ task.packCount }}包</div>
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
             }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
           </div>
         </div>
-        <var-checkbox v-model="form.danger3"></var-checkbox>
       </div>
     </div>
 
-    <div class="task-module task-module-2" v-if="currentTask2?.length === 3">
+    <div class="task-module task-module-2" v-if="currentTask2?.length === 3" @click="form.danger2 = !form.danger2">
       <div class="danger-label">
-        危险2
+        <var-checkbox v-model="form.danger2" readonly></var-checkbox>
+        <div>危险2</div>
         <span class="limit" v-if="currentStage?.limit?.[1]">{{
           getLimitText(currentStage?.limit?.[1])
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask2"
-          :class="{ 'task-selected': form.danger2 }">
+        <div class="task" v-for="task in currentTask2" :class="{ 'task-selected': form.danger2 }">
           <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+            <div class="task-sp">{{ task.sp }}sp</div>
+            <div class="task-sc">{{ task.packCount }}包</div>
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
             }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
           </div>
         </div>
-        <var-checkbox v-model="form.danger2"></var-checkbox>
       </div>
     </div>
 
-    <div class="task-module task-module-1" v-if="currentTask1?.length === 3">
+    <div class="task-module task-module-1" v-if="currentTask1?.length === 3" @click="form.danger1 = !form.danger1">
       <div class="danger-label">
-        危险1
+        <var-checkbox v-model="form.danger1" readonly></var-checkbox>
+        <div>危险1</div>
         <span class="limit" v-if="currentStage?.limit?.[0]">{{
           getLimitText(currentStage?.limit?.[0])
         }}</span>
       </div>
       <div class="task-list">
-        <div
-          class="task"
-          v-for="task in currentTask1"
-          :class="{ 'task-selected': form.danger1 }">
+        <div class="task" v-for="task in currentTask1" :class="{ 'task-selected': form.danger1 }">
           <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+            <div class="task-sp">{{ task.sp }}sp</div>
+            <div class="task-sc">{{ task.packCount }}包</div>
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
             }}{{ dpValid && isTaskMax(task) ? '+1' : '' }}
           </div>
         </div>
-        <var-checkbox v-model="form.danger1"></var-checkbox>
       </div>
     </div>
 
-    <div
-      class="task-module task-module-0"
-      v-if="(currentTask0?.length || 0) > 0">
-      <div class="danger-label">危险0</div>
+    <div class="task-module task-module-0" v-if="(currentTask0?.length || 0) > 0">
+      <div class="danger-label danger-label-0">危险0</div>
       <div class="task-list">
         <div class="task task-selected" v-for="task in currentTask0">
           <div class="task-sp-sc">
-            <div class="task-sp">SP {{ task.sp }}</div>
-            <div class="task-sc">SC {{ task.packCount }}</div>
+            <div class="task-sp">{{ task.sp }}sp</div>
+            <div class="task-sc">{{ task.packCount }}包</div>
           </div>
-          <div class="task-danger">{{ task.danger }}</div>
           <div class="task-count">
-            {{ !dpValid ? '🎤' : getPackCount(task)
+            {{ getPackCount(task)
             }}{{ isTaskMax(task) ? '+1' : '' }}
           </div>
         </div>
@@ -342,12 +325,9 @@ const getLimitText = (limit: string | number) => {
     > -->
 
     <!-- <div style="white-space: pre-wrap">{{ result }}</div> -->
-    <var-snackbar type="success" v-model:show="snackRefreshSuccess"
-      >最新</var-snackbar
-    ><var-snackbar type="error" v-model:show="snackRefreshError"
-      >失败了</var-snackbar
-    >
-    <div class="result-card">
+    <var-snackbar type="success" v-model:show="snackRefreshSuccess">最新</var-snackbar><var-snackbar type="error"
+      v-model:show="snackRefreshError">失败了</var-snackbar>
+    <div class="result-card" style="margin-top: 16px;">
       <div class="result-card-title">这关怎么打 ❓</div>
       <div v-if="dpValid">
         <div v-for="task in result?.res">
@@ -358,6 +338,7 @@ const getLimitText = (limit: string | number) => {
             task.taskCount === 1 ? '这' : '每'
           }}把 {{ task.packCount }} 包；
         </div>
+        <div>此时距离过关只剩 <span class="result-number-54">{{ result?.lastSP }}</span> SP 了！</div>
         <div>
           最后 <span class="result-number result-number-54">1</span> 把
           {{ result?.taskMax.sp }} SP，危险 {{ result?.taskMax.danger }}，这把
@@ -365,14 +346,12 @@ const getLimitText = (limit: string | number) => {
         </div>
         <div>本关战绩：</div>
         <div>
-          <span class="result-number">{{ result?.taskCountTotal }}</span> 次比赛
-        </div>
-        <div>
-          <span class="result-number">{{ result?.packTotal }}</span> 个福币包
-        </div>
-        <div>
+          <span class="result-number">{{ result?.taskCountTotal }}</span> 次比赛,
+          <span class="result-number">{{ result?.packTotal }}</span> 个福币包,
           <span class="result-number">{{ result?.coinTotal }}</span>
-          个福币，如果不出 🔑 和 888 福币的话
+          个福币，
+        </div>
+        <div>如果不出 🔑 和 888 福币的话
         </div>
       </div>
       <div v-else class="result-invalid">
@@ -380,8 +359,8 @@ const getLimitText = (limit: string | number) => {
         <div v-if="errorNoTasks">
           {{
             errorNoTasksCount > 9
-              ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
-              : '选择一些危险度再来看看吧'
+            ? '你干嘛哎哟！据说9个一样的图案可以召唤车联钥匙！'
+            : '选择一些危险度再来看看吧'
           }}
         </div>
       </div>
@@ -416,7 +395,7 @@ const getLimitText = (limit: string | number) => {
 .task {
   &-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
     align-items: center;
   }
@@ -434,7 +413,9 @@ const getLimitText = (limit: string | number) => {
   align-items: center;
 
   &-sp-sc {
-    font-size: 12px;
+    // font-size: 12px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &-danger {
@@ -449,11 +430,23 @@ const getLimitText = (limit: string | number) => {
     // padding: 2px 0 4px 0;
     font-size: 36px;
     grid-column: 1 / span 2;
+
+    &::after {
+      content: '次';
+      font-size: 16px;
+    }
   }
 }
 
 .danger-label {
   margin: 8px 0 4px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: -8px;
+
+  &-0 {
+    margin-bottom: 0;
+  }
 }
 
 .result-number {
@@ -483,12 +476,31 @@ const getLimitText = (limit: string | number) => {
   }
 }
 
-.task-module + .task-module {
+.task-module+.task-module {
   margin-top: 16px;
 }
 
 .limit {
   padding-left: 1em;
   color: #ff0054;
+}
+
+.stage {
+  &-list {
+    display: flex;
+    border: 2px solid #3a7afe;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  width: 48px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-selected {
+    background-color: #9cbcff;
+  }
 }
 </style>
