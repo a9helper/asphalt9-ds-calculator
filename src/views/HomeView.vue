@@ -4,6 +4,8 @@ import dp from './dp'
 import axios from 'axios'
 import useFormStore from './form.store'
 
+import localData from './eventData'
+
 const eventData = ref<DSData>({
   _id: 'al-cc850',
   chapters: [],
@@ -11,13 +13,19 @@ const eventData = ref<DSData>({
 
 const formStore = useFormStore()
 
+const debug = true
+
 const { form } = storeToRefs(formStore)
 
 const getEventData = async () => {
-  const res = await axios.get<DSData[]>(
+  let res = await axios.get<DSData[]>(
     'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
   )
-  const target = res.data.find((item) => item._id === 'al-cc850')
+  let res2 = res.data
+  if (debug) {
+    res2 = [localData]
+  }
+  const target = res2.find((item) => item._id === 'al-cc850')
   if (target) {
     for (let chapter of target.chapters) {
       for (let stage of chapter.stages) {

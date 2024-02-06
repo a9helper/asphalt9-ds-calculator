@@ -2,6 +2,7 @@ import './assets/main.css'
 import '@varlet/touch-emulator'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import 'element-plus/theme-chalk/src/index.scss'
 
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
