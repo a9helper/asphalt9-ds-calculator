@@ -95,18 +95,6 @@ const onSubmit = async () => {
 
 <template>
   <div class="page">
-    <div style="position: fixed; right: 0px; left: 0px; bottom: 60px">
-      <div
-        style="
-          display: flex;
-          justify-content: end;
-          max-width: 750px;
-          padding: 0 20px;
-          margin: auto;
-        ">
-        <el-button type="success" :icon="Check" circle />
-      </div>
-    </div>
     <el-form label-width="80px">
       <el-form-item label="章节">
         <el-select v-model="formExtra.chapter" placeholder="选择章节">
@@ -125,29 +113,10 @@ const onSubmit = async () => {
       </el-form-item>
       <el-form-item label="快捷操作">
         <el-button style="margin-right: 1em" @click="onSync">同步SP</el-button
-        >将前一关卡的SP数据同步到当前关卡
+        >将前一关卡的SP同步到此
       </el-form-item>
 
-      <el-form-item label="任务">
-        <div class="task-list">
-          <div class="task" v-for="task in currentStage?.tasks">
-            危险{{ task.danger }}的 SP=
-            <el-input-number
-              v-model="task.sp"
-              style="width: 100px"
-              :min="1"
-              :max="1000000"
-              :controls="false" />，包数量为
-            <el-input-number
-              v-model="task.packCount"
-              style="width: 100px"
-              :min="1"
-              :max="1000000"
-              :controls="false" />
-          </div>
-        </div>
-      </el-form-item>
-      <el-form-item>
+      <el-form-item label="密码">
         <el-input
           v-model="formExtra.token"
           type="password"
@@ -155,7 +124,24 @@ const onSubmit = async () => {
           show-password />
       </el-form-item>
     </el-form>
-    <div>
+    <div class="task-list">
+      <div class="task" v-for="task in currentStage?.tasks">
+        危险{{ task.danger }}，SP=
+        <el-input-number
+          v-model="task.sp"
+          style="width: 100px"
+          :min="1"
+          :max="1000000"
+          :controls="false" />，包=
+        <el-input-number
+          v-model="task.packCount"
+          style="width: 100px"
+          :min="1"
+          :max="1000000"
+          :controls="false" />
+      </div>
+    </div>
+    <div style="margin-top: 1em">
       <el-button type="primary" @click="onSubmit">提交！</el-button>
     </div>
     <!-- <div>{{ form }}</div> -->

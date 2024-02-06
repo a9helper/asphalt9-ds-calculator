@@ -13,7 +13,7 @@ const eventData = ref<DSData>({
 
 const formStore = useFormStore()
 
-const debug = true
+const debug = false
 
 const { form } = storeToRefs(formStore)
 

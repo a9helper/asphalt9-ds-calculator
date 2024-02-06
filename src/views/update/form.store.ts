@@ -2,7 +2,7 @@ const useFormStore = defineStore(
   'form-update',
   () => {
     const formExtra = ref({
-      chapter: 1,
+      chapter: 6,
       stage: 1,
       token: '',
     })
