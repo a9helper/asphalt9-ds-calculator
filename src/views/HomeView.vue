@@ -172,6 +172,7 @@ const refresh = async () => {
   } else {
     snackRefreshError.value = true
   }
+  runDP()
 }
 
 const getPackCount = (task: Task) => {
@@ -492,6 +493,8 @@ const getLimitText = (limit: string | number) => {
     border-radius: 8px;
     overflow: hidden;
   }
+
+  cursor: pointer;
 
   width: 48px;
   height: 36px;

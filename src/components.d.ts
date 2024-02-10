@@ -22,8 +22,6 @@ declare module 'vue' {
     VarCheckbox: typeof import('@varlet/ui')['_CheckboxComponent']
     VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarOption: typeof import('@varlet/ui')['_OptionComponent']
-    VarRadio: typeof import('@varlet/ui')['_RadioComponent']
-    VarRadioGroup: typeof import('@varlet/ui')['_RadioGroupComponent']
     VarSelect: typeof import('@varlet/ui')['_SelectComponent']
     VarSnackbar: typeof import('@varlet/ui')['_SnackbarComponent']
   }
