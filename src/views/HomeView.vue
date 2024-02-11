@@ -329,7 +329,7 @@ const getLimitText = (limit: string | number) => {
     <var-snackbar type="success" v-model:show="snackRefreshSuccess">最新</var-snackbar><var-snackbar type="error"
       v-model:show="snackRefreshError">失败了</var-snackbar>
     <div class="result-card" style="margin-top: 16px;">
-      <div class="result-card-title">这关怎么打 ❓</div>
+      <div class="result-card-title">这关怎么打 ❓ {{ currentChapter?.title }} 第 {{ currentStage?.stage }} 关</div>
       <div v-if="dpValid">
         <div v-for="task in result?.res">
           <span class="result-number result-number-54">{{
@@ -372,11 +372,11 @@ const getLimitText = (limit: string | number) => {
       <div>
         <div class="color-54">+1 的任务请务必在最后去完成！</div>
         <div>
-          本计算器使用方法：选择章节和关卡，勾选或取消勾选右侧可参加的危险度，即可获得每种任务所需要的次数了。
+          本计算器使用方法：选择章节和关卡，勾选或取消勾选可参加的危险度，即可获得每种任务所需要的次数了。
         </div>
         <div>
           车联交流QQ群<span class="color-54"> 891152409 </span>, 本计算器启发于
-          浪-Saxon，感谢 浪-喵呜 和其他群友！
+          浪-Saxon，感谢 浪-喵呜，感谢提供数据的各位神神， 和其他群友！
         </div>
       </div>
     </div>
