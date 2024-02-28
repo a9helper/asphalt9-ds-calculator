@@ -376,7 +376,7 @@ const getLimitText = (limit: string | number) => {
         </div>
         <div>
           车联交流QQ群<span class="color-54"> 891152409 </span>, 本计算器启发于
-          浪-Saxon，感谢 浪-喵呜，感谢提供数据的各位神神， 和其他群友！
+          浪-Saxon，感谢 浪-喵呜，感谢提供数据的各位神神， 感谢寒冷的嘎嘣脆提供的改进思路，感谢其他群友！
         </div>
       </div>
     </div>
