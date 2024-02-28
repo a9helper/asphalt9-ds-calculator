@@ -1,4 +1,5 @@
 {
+  "_id": "al-cc850",
   "chapters": [
     {
       "chapter": 1,
@@ -954,17 +955,17 @@
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 12
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 1
+              "packCount": 12
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 12
             }
           ]
         },
@@ -976,32 +977,32 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 26
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 25
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 1
+              "packCount": 24
             },
             {
               "danger": 2,
-              "sp": 3498,
-              "packCount": 1
+              "sp": 3564,
+              "packCount": 12
             },
             {
               "danger": 2,
-              "sp": 3180,
-              "packCount": 1
+              "sp": 3240,
+              "packCount": 11
             },
             {
               "danger": 2,
-              "sp": 3021,
-              "packCount": 1
+              "sp": 3078,
+              "packCount": 10
             }
           ]
         },
@@ -1013,47 +1014,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 28
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 27
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 1
+              "packCount": 26
             },
             {
               "danger": 2,
-              "sp": 3498,
-              "packCount": 1
+              "sp": 3564,
+              "packCount": 13
             },
             {
               "danger": 2,
-              "sp": 3180,
-              "packCount": 1
+              "sp": 3240,
+              "packCount": 12
             },
             {
               "danger": 2,
-              "sp": 3021,
-              "packCount": 1
+              "sp": 3078,
+              "packCount": 11
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 1
+              "packCount": 5
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 1
+              "packCount": 5
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 1
+              "packCount": 5
             }
           ]
         },
@@ -1065,47 +1066,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 36
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 35
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 1
+              "packCount": 35
             },
             {
               "danger": 2,
-              "sp": 3498,
-              "packCount": 1
+              "sp": 3564,
+              "packCount": 17
             },
             {
               "danger": 2,
-              "sp": 3180,
-              "packCount": 1
+              "sp": 3240,
+              "packCount": 15
             },
             {
               "danger": 2,
-              "sp": 3021,
-              "packCount": 1
+              "sp": 3078,
+              "packCount": 13
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 1
+              "packCount": 6
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 1
+              "packCount": 6
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 1
+              "packCount": 6
             }
           ]
         },
@@ -1117,47 +1118,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 38
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 2
             },
             {
               "danger": 3,
-              "sp": 6270,
-              "packCount": 1
+              "sp": 3630,
+              "packCount": 19
             },
             {
               "danger": 2,
-              "sp": 3498,
-              "packCount": 1
+              "sp": 3564,
+              "packCount": 18
             },
             {
               "danger": 2,
-              "sp": 3180,
-              "packCount": 1
+              "sp": 3240,
+              "packCount": 16
             },
             {
               "danger": 2,
-              "sp": 3021,
-              "packCount": 1
+              "sp": 3078,
+              "packCount": 15
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 1
+              "packCount": 7
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 1
+              "packCount": 7
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 1
+              "packCount": 7
             }
           ]
         },
@@ -1169,47 +1170,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 1
+              "packCount": 48
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 1
+              "packCount": 46
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 1
+              "packCount": 45
             },
             {
               "danger": 2,
-              "sp": 3498,
-              "packCount": 1
+              "sp": 3564,
+              "packCount": 22
             },
             {
               "danger": 2,
-              "sp": 3180,
-              "packCount": 1
+              "sp": 3240,
+              "packCount": 21
             },
             {
               "danger": 2,
-              "sp": 3021,
-              "packCount": 1
+              "sp": 3078,
+              "packCount": 20
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 1
+              "packCount": 7
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 1
+              "packCount": 7
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 1
+              "packCount": 7
             }
           ]
         }
@@ -1227,18 +1228,18 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 6600,
-              "packCount": 1
+              "sp": 5225,
+              "packCount": 20
             },
             {
               "danger": 3,
-              "sp": 6270,
-              "packCount": 1
+              "sp": 5500,
+              "packCount": 21
             },
             {
               "danger": 3,
-              "sp": 7260,
-              "packCount": 1
+              "sp": 6050,
+              "packCount": 22
             }
           ]
         },
@@ -1249,18 +1250,18 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 7260,
-              "packCount": 1
+              "sp": 5225,
+              "packCount": 24
             },
             {
               "danger": 3,
-              "sp": 6600,
-              "packCount": 1
+              "sp": 5500,
+              "packCount": 25
             },
             {
               "danger": 3,
-              "sp": 6270,
-              "packCount": 1
+              "sp": 6050,
+              "packCount": 26
             }
           ]
         }

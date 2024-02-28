@@ -4,7 +4,7 @@ import dp from './dp'
 import axios from 'axios'
 import useFormStore from './form.store'
 
-import localData from './eventData'
+// import localData from './eventData.json'
 
 const eventData = ref<DSData>({
   _id: 'al-cc850',
@@ -22,9 +22,9 @@ const getEventData = async () => {
     'https://387dda42-7df7-43c7-ab80-535cd9986d16.bspapp.com/api/getDS'
   )
   let res2 = res.data
-  if (debug) {
-    res2 = [localData]
-  }
+  // if (debug) {
+  //   res2 = [localData] as any
+  // }
   const target = res2.find((item) => item._id === 'al-cc850')
   if (target) {
     for (let chapter of target.chapters) {
@@ -401,6 +401,11 @@ const getLimitText = (limit: string | number) => {
     align-items: center;
   }
 
+  &-module {
+    user-select: none;
+    cursor: pointer;
+  }
+
   background: #e1e1e1;
   border-radius: 8px;
   padding: 8px;
@@ -492,6 +497,7 @@ const getLimitText = (limit: string | number) => {
     border: 2px solid #3a7afe;
     border-radius: 8px;
     overflow: hidden;
+    user-select: none;
   }
 
   cursor: pointer;
