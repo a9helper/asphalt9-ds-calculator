@@ -12,7 +12,7 @@ const formStore = useFormStore()
 const { formExtra } = storeToRefs(formStore)
 
 const form = ref<DSData>({
-  _id: 'al-cc850',
+  _id: 'al-devel',
   chapters: [],
 })
 
@@ -36,7 +36,7 @@ watch(
 
 const getEventData = async () => {
   const res = await axiosInstance.get<DSData[]>('/api/getDS')
-  const target = res.data.find((item) => item._id === 'al-cc850')
+  const target = res.data.find((item) => item._id === 'al-devel')
   return target
 }
 onMounted(async () => {
@@ -101,14 +101,16 @@ const onSubmit = async () => {
           <el-option
             :label="chapter.title"
             :value="chapter.chapter"
-            v-for="chapter in form.chapters" />
+            v-for="chapter in form.chapters"
+          />
         </el-select>
       </el-form-item>
       <el-form-item label="关卡">
         <el-radio-group v-model="formExtra.stage">
           <el-radio-button
             :label="stage.stage"
-            v-for="stage in currentChapter?.stages" />
+            v-for="stage in currentChapter?.stages"
+          />
         </el-radio-group>
       </el-form-item>
       <el-form-item label="快捷操作">
@@ -121,7 +123,8 @@ const onSubmit = async () => {
           v-model="formExtra.token"
           type="password"
           placeholder="输入密码"
-          show-password />
+          show-password
+        />
       </el-form-item>
     </el-form>
     <div class="task-list">
@@ -132,13 +135,15 @@ const onSubmit = async () => {
           style="width: 100px"
           :min="1"
           :max="1000000"
-          :controls="false" />，包=
+          :controls="false"
+        />，包=
         <el-input-number
           v-model="task.packCount"
           style="width: 100px"
           :min="1"
           :max="1000000"
-          :controls="false" />
+          :controls="false"
+        />
       </div>
     </div>
     <div style="margin-top: 1em">
