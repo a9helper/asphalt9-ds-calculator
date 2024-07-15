@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "第一章",
+      "title": "第1章 A9启动！",
       "coinPerPack": 48,
       "stages": [
         {
@@ -17,7 +17,7 @@
             {
               "danger": 0,
               "sp": 888,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -33,7 +33,7 @@
             {
               "danger": 0,
               "sp": 2388,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -49,17 +49,17 @@
             {
               "danger": 0,
               "sp": 2750,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 0,
               "sp": 2500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 0,
               "sp": 2375,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -67,7 +67,7 @@
     },
     {
       "chapter": 2,
-      "title": "第二章（AMG Vision）",
+      "title": "第2章 AMG Vision",
       "coinPerPack": 88,
       "stages": [
         {
@@ -82,17 +82,17 @@
             {
               "danger": 3,
               "sp": 4063,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4277,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4705,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -108,32 +108,32 @@
             {
               "danger": 2,
               "sp": 1884,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 1983,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2181,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4063,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4277,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4705,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -149,47 +149,47 @@
             {
               "danger": 1,
               "sp": 812,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 855,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 941,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 1884,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 1983,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2181,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4063,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4277,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4705,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -205,47 +205,47 @@
             {
               "danger": 1,
               "sp": 812,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 855,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 941,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 1884,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 1983,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2181,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4063,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4277,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 4705,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -253,7 +253,7 @@
     },
     {
       "chapter": 3,
-      "title": "第3章（Diablo）",
+      "title": "第3章 Diablo",
       "coinPerPack": 128,
       "stages": [
         {
@@ -268,17 +268,17 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -294,32 +294,32 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2423,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2550,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2805,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -335,47 +335,47 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2423,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2550,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2805,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1188,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1250,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1375,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -391,47 +391,47 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2423,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2550,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2805,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1188,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1250,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1375,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -447,47 +447,47 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2423,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2550,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 2805,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1188,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1250,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1375,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -495,7 +495,7 @@
     },
     {
       "chapter": 4,
-      "title": "第4章（911 GT3）",
+      "title": "第4章 911 GT3",
       "coinPerPack": 168,
       "stages": [
         {
@@ -510,17 +510,17 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -536,32 +536,32 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -577,47 +577,47 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1539,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1620,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1782,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -633,47 +633,47 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1539,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1620,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1782,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -689,47 +689,47 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1539,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1620,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1782,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -737,7 +737,7 @@
     },
     {
       "chapter": 5,
-      "title": "第5章（Zagato）",
+      "title": "第5章 Zagato",
       "coinPerPack": 208,
       "stages": [
         {
@@ -752,17 +752,17 @@
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -778,32 +778,32 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -819,47 +819,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -875,47 +875,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -931,47 +931,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -987,47 +987,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3498,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3180,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3021,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -1035,7 +1035,7 @@
     },
     {
       "chapter": 6,
-      "title": "第6章（F5）",
+      "title": "第6章 F5",
       "coinPerPack": 248,
       "stages": [
         {
@@ -1050,17 +1050,17 @@
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1076,32 +1076,32 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3564,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3240,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3078,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1117,47 +1117,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3564,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3240,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3078,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1173,47 +1173,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3564,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3240,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3078,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1229,47 +1229,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3564,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3240,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3078,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1285,47 +1285,47 @@
             {
               "danger": 3,
               "sp": 7260,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6600,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3564,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3240,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 2,
               "sp": 3078,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1716,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1560,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 1,
               "sp": 1482,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
@@ -1333,7 +1333,7 @@
     },
     {
       "chapter": 7,
-      "title": "第7章（Devel）",
+      "title": "第7章 Devel",
       "coinPerPack": 288,
       "stages": [
         {
@@ -1348,17 +1348,17 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         },
@@ -1374,17 +1374,17 @@
             {
               "danger": 3,
               "sp": 5225,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 5500,
-              "packCount": 9999
+              "packCount": 983
             },
             {
               "danger": 3,
               "sp": 6050,
-              "packCount": 9999
+              "packCount": 983
             }
           ]
         }
