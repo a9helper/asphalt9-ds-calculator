@@ -1,5 +1,6 @@
 const eventData: DSData = {
   _id: 'al-cc850',
+  server: 'al',
   chapters: [
     {
       chapter: 1,

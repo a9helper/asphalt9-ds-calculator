@@ -7,7 +7,8 @@ import useFormStore from './form.store'
 // import localData from './eventData.json'
 
 const eventData = ref<DSData>({
-  _id: 'al-devel',
+  _id: 'gl-absolut',
+  server: 'al',
   chapters: [],
 })
 
@@ -25,7 +26,7 @@ const getEventData = async () => {
   // if (debug) {
   //   res2 = [localData] as any
   // }
-  const target = res2.find((item) => item._id === 'al-devel')
+  const target = res2.find((item) => item._id === 'gl-absolut')
   if (target) {
     for (let chapter of target.chapters) {
       for (let stage of chapter.stages) {
@@ -206,6 +207,8 @@ const getLimitText = (limit: string | number) => {
     return `${limit}星及以上车辆请勾选`
   }
 }
+
+const isAL = computed(() => eventData.value.server === 'al')
 </script>
 
 <template>
@@ -270,7 +273,9 @@ const getLimitText = (limit: string | number) => {
         >
           <div class="task-sp-sc">
             <div class="task-sp">{{ task.sp }}sp</div>
-            <div class="task-sc">{{ task.packCount }}包</div>
+            <div class="task-sc">
+              {{ task.packCount }}{{ isAL ? '包' : '币' }}
+            </div>
           </div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
@@ -300,7 +305,9 @@ const getLimitText = (limit: string | number) => {
         >
           <div class="task-sp-sc">
             <div class="task-sp">{{ task.sp }}sp</div>
-            <div class="task-sc">{{ task.packCount }}包</div>
+            <div class="task-sc">
+              {{ task.packCount }}{{ isAL ? '包' : '币' }}
+            </div>
           </div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
@@ -330,7 +337,9 @@ const getLimitText = (limit: string | number) => {
         >
           <div class="task-sp-sc">
             <div class="task-sp">{{ task.sp }}sp</div>
-            <div class="task-sc">{{ task.packCount }}包</div>
+            <div class="task-sc">
+              {{ task.packCount }}{{ isAL ? '包' : '币' }}
+            </div>
           </div>
           <div class="task-count">
             {{ !dpValid ? getRandomKun() : getPackCount(task)
@@ -349,7 +358,9 @@ const getLimitText = (limit: string | number) => {
         <div class="task task-selected" v-for="task in currentTask0">
           <div class="task-sp-sc">
             <div class="task-sp">{{ task.sp }}sp</div>
-            <div class="task-sc">{{ task.packCount }}包</div>
+            <div class="task-sc">
+              {{ task.packCount }}{{ isAL ? '包' : '币' }}
+            </div>
           </div>
           <div class="task-count">
             {{ getPackCount(task) }}{{ isTaskMax(task) ? '+1' : '' }}
@@ -382,7 +393,7 @@ const getLimitText = (limit: string | number) => {
           }}</span>
           把 {{ task.sp }} SP，危险 {{ task.danger }}，{{
             task.taskCount === 1 ? '这' : '每'
-          }}把 {{ task.packCount }} 包；
+          }}把 {{ task.packCount }} {{ isAL ? '包' : '紫币' }}；
         </div>
         <div>
           此时距离过关只剩
@@ -391,17 +402,21 @@ const getLimitText = (limit: string | number) => {
         <div>
           最后 <span class="result-number result-number-54">1</span> 把
           {{ result?.taskMax.sp }} SP，危险 {{ result?.taskMax.danger }}，这把
-          {{ result?.taskMax.packCount }} 包。
+          {{ result?.taskMax.packCount }} {{ isAL ? '包' : '紫币' }}。
         </div>
         <div>本关战绩：</div>
         <div>
           <span class="result-number">{{ result?.taskCountTotal }}</span>
           次比赛,
-          <span class="result-number">{{ result?.packTotal }}</span> 个福币包,
-          <span class="result-number">{{ result?.coinTotal }}</span>
-          个福币，
+          <span class="result-number">{{ result?.packTotal }}</span> 个{{
+            isAL ? '福币包，' : '紫币。'
+          }}福币包,
+          <template v-if="isAL">
+            <span class="result-number">{{ result?.coinTotal }}</span>
+            个福币，</template
+          >
         </div>
-        <div>如果不出 🔑 和 888 福币的话</div>
+        <div v-if="isAL">如果不出 🔑 和 888 福币的话</div>
       </div>
       <div v-else class="result-invalid">
         <div v-if="errorNoStage">选择一个关卡再来看看吧</div>
@@ -423,9 +438,9 @@ const getLimitText = (limit: string | number) => {
           本计算器使用方法：选择章节和关卡，勾选或取消勾选可参加的危险度，即可获得每种任务所需要的次数了。
         </div>
         <div>
-          车联交流QQ群<span class="color-54"> 891152409 </span>, 本计算器启发于
-          浪-Saxon，感谢 浪-喵呜，感谢提供数据的各位神神，
-          感谢寒冷的嘎嘣脆提供的改进思路，感谢其他群友！
+          车联交流QQ群<span class="color-54"
+            >{{ isAL ? '891152409' : '655690118' }} </span
+          >。
         </div>
       </div>
     </div>

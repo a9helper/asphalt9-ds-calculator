@@ -21,6 +21,7 @@ interface Chapter {
 
 interface DSData {
   chapters: Chapter[]
+  server: 'al' | 'gl'
   _id: string
 }
 

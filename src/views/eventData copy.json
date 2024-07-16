@@ -1,14 +1,13 @@
 {
-  "server": "gl",
   "chapters": [
     {
       "chapter": 1,
-      "title": "第1章 A9集结",
-      "coinPerPack": 1,
+      "title": "第1章 A9启动！",
+      "coinPerPack": 48,
       "stages": [
         {
           "stage": 1,
-          "sp": 1000,
+          "sp": 888,
           "limit": [
             0,
             0,
@@ -17,14 +16,14 @@
           "tasks": [
             {
               "danger": 0,
-              "sp": 1000,
-              "packCount": 700
+              "sp": 888,
+              "packCount": 983
             }
           ]
         },
         {
           "stage": 2,
-          "sp": 12000,
+          "sp": 2388,
           "limit": [
             0,
             0,
@@ -33,24 +32,14 @@
           "tasks": [
             {
               "danger": 0,
-              "sp": 5000,
-              "packCount": 800
-            },
-            {
-              "danger": 0,
-              "sp": 4000,
-              "packCount": 640
-            },
-            {
-              "danger": 0,
-              "sp": 3000,
-              "packCount": 380
+              "sp": 2388,
+              "packCount": 983
             }
           ]
         },
         {
           "stage": 3,
-          "sp": 1000,
+          "sp": 4724,
           "limit": [
             0,
             0,
@@ -59,8 +48,18 @@
           "tasks": [
             {
               "danger": 0,
-              "sp": 1000,
-              "packCount": 820
+              "sp": 2750,
+              "packCount": 983
+            },
+            {
+              "danger": 0,
+              "sp": 2500,
+              "packCount": 983
+            },
+            {
+              "danger": 0,
+              "sp": 2375,
+              "packCount": 983
             }
           ]
         }
@@ -68,12 +67,12 @@
     },
     {
       "chapter": 2,
-      "title": "第2章 Mission R",
-      "coinPerPack": 1,
+      "title": "第2章 AMG Vision",
+      "coinPerPack": 88,
       "stages": [
         {
           "stage": 1,
-          "sp": 15000,
+          "sp": 7888,
           "limit": [
             0,
             0,
@@ -82,24 +81,24 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 5250,
-              "packCount": 1400
+              "sp": 4063,
+              "packCount": 983
             },
             {
               "danger": 3,
-              "sp": 3375,
-              "packCount": 1120
+              "sp": 4277,
+              "packCount": 983
             },
             {
               "danger": 3,
-              "sp": 2250,
-              "packCount": 840
+              "sp": 4705,
+              "packCount": 983
             }
           ]
         },
         {
           "stage": 2,
-          "sp": 20000,
+          "sp": 7888,
           "limit": [
             0,
             1,
@@ -107,40 +106,40 @@
           ],
           "tasks": [
             {
-              "danger": 3,
-              "sp": 5250,
-              "packCount": 1600
-            },
-            {
-              "danger": 3,
-              "sp": 3375,
-              "packCount": 1280
-            },
-            {
-              "danger": 3,
-              "sp": 2250,
-              "packCount": 960
+              "danger": 2,
+              "sp": 1884,
+              "packCount": 983
             },
             {
               "danger": 2,
-              "sp": 3150,
-              "packCount": 400
+              "sp": 1983,
+              "packCount": 983
             },
             {
               "danger": 2,
-              "sp": 2025,
-              "packCount": 320
+              "sp": 2181,
+              "packCount": 983
             },
             {
-              "danger": 2,
-              "sp": 1350,
-              "packCount": 240
+              "danger": 3,
+              "sp": 4063,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4277,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4705,
+              "packCount": 983
             }
           ]
         },
         {
           "stage": 3,
-          "sp": 23000,
+          "sp": 9888,
           "limit": [
             1,
             2,
@@ -148,55 +147,55 @@
           ],
           "tasks": [
             {
-              "danger": 3,
-              "sp": 5250,
-              "packCount": 1800
-            },
-            {
-              "danger": 3,
-              "sp": 3375,
-              "packCount": 1440
-            },
-            {
-              "danger": 3,
-              "sp": 2250,
-              "packCount": 1080
-            },
-            {
-              "danger": 2,
-              "sp": 3150,
-              "packCount": 450
-            },
-            {
-              "danger": 2,
-              "sp": 2025,
-              "packCount": 360
-            },
-            {
-              "danger": 2,
-              "sp": 1350,
-              "packCount": 270
+              "danger": 1,
+              "sp": 812,
+              "packCount": 983
             },
             {
               "danger": 1,
-              "sp": 1470,
-              "packCount": 180
+              "sp": 855,
+              "packCount": 983
             },
             {
               "danger": 1,
-              "sp": 945,
-              "packCount": 144
+              "sp": 941,
+              "packCount": 983
             },
             {
-              "danger": 1,
-              "sp": 630,
-              "packCount": 108
+              "danger": 2,
+              "sp": 1884,
+              "packCount": 983
+            },
+            {
+              "danger": 2,
+              "sp": 1983,
+              "packCount": 983
+            },
+            {
+              "danger": 2,
+              "sp": 2181,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4063,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4277,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4705,
+              "packCount": 983
             }
           ]
         },
         {
           "stage": 4,
-          "sp": 25000,
+          "sp": 12560,
           "limit": [
             2,
             3,
@@ -204,49 +203,49 @@
           ],
           "tasks": [
             {
-              "danger": 3,
-              "sp": 5250,
-              "packCount": 2000
-            },
-            {
-              "danger": 3,
-              "sp": 3375,
-              "packCount": 1600
-            },
-            {
-              "danger": 3,
-              "sp": 2250,
-              "packCount": 1200
-            },
-            {
-              "danger": 2,
-              "sp": 3150,
-              "packCount": 500
-            },
-            {
-              "danger": 2,
-              "sp": 2025,
-              "packCount": 400
-            },
-            {
-              "danger": 2,
-              "sp": 1350,
-              "packCount": 300
+              "danger": 1,
+              "sp": 812,
+              "packCount": 983
             },
             {
               "danger": 1,
-              "sp": 1470,
-              "packCount": 200
+              "sp": 855,
+              "packCount": 983
             },
             {
               "danger": 1,
-              "sp": 945,
-              "packCount": 160
+              "sp": 941,
+              "packCount": 983
             },
             {
-              "danger": 1,
-              "sp": 630,
-              "packCount": 120
+              "danger": 2,
+              "sp": 1884,
+              "packCount": 983
+            },
+            {
+              "danger": 2,
+              "sp": 1983,
+              "packCount": 983
+            },
+            {
+              "danger": 2,
+              "sp": 2181,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4063,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4277,
+              "packCount": 983
+            },
+            {
+              "danger": 3,
+              "sp": 4705,
+              "packCount": 983
             }
           ]
         }
@@ -254,12 +253,12 @@
     },
     {
       "chapter": 3,
-      "title": "第3章 Enzo",
-      "coinPerPack": 1,
+      "title": "第3章 Diablo",
+      "coinPerPack": 128,
       "stages": [
         {
           "stage": 1,
-          "sp": 22000,
+          "sp": 17888,
           "limit": [
             0,
             0,
@@ -285,7 +284,7 @@
         },
         {
           "stage": 2,
-          "sp": 27000,
+          "sp": 20888,
           "limit": [
             0,
             1,
@@ -326,7 +325,7 @@
         },
         {
           "stage": 3,
-          "sp": 30000,
+          "sp": 22888,
           "limit": [
             1,
             2,
@@ -382,7 +381,7 @@
         },
         {
           "stage": 4,
-          "sp": 33000,
+          "sp": 22888,
           "limit": [
             2,
             3,
@@ -438,7 +437,7 @@
         },
         {
           "stage": 5,
-          "sp": 35000,
+          "sp": 22783,
           "limit": [
             3,
             4,
@@ -496,12 +495,12 @@
     },
     {
       "chapter": 4,
-      "title": "第4章 SCV12",
-      "coinPerPack": 1,
+      "title": "第4章 911 GT3",
+      "coinPerPack": 168,
       "stages": [
         {
           "stage": 1,
-          "sp": 33000,
+          "sp": 30888,
           "limit": [
             0,
             0,
@@ -527,7 +526,7 @@
         },
         {
           "stage": 2,
-          "sp": 37000,
+          "sp": 32888,
           "limit": [
             0,
             1,
@@ -568,7 +567,7 @@
         },
         {
           "stage": 3,
-          "sp": 40000,
+          "sp": 36888,
           "limit": [
             1,
             2,
@@ -624,7 +623,7 @@
         },
         {
           "stage": 4,
-          "sp": 42000,
+          "sp": 36888,
           "limit": [
             2,
             3,
@@ -680,7 +679,7 @@
         },
         {
           "stage": 5,
-          "sp": 44000,
+          "sp": 38898,
           "limit": [
             3,
             4,
@@ -738,12 +737,12 @@
     },
     {
       "chapter": 5,
-      "title": "第5章 SF90 XX",
-      "coinPerPack": 1,
+      "title": "第5章 Zagato",
+      "coinPerPack": 208,
       "stages": [
         {
           "stage": 1,
-          "sp": 31000,
+          "sp": 30888,
           "limit": [
             0,
             0,
@@ -769,7 +768,7 @@
         },
         {
           "stage": 2,
-          "sp": 33000,
+          "sp": 32888,
           "limit": [
             0,
             1,
@@ -810,7 +809,7 @@
         },
         {
           "stage": 3,
-          "sp": 36000,
+          "sp": 33888,
           "limit": [
             1,
             2,
@@ -866,7 +865,7 @@
         },
         {
           "stage": 4,
-          "sp": 38000,
+          "sp": 33888,
           "limit": [
             2,
             3,
@@ -922,7 +921,7 @@
         },
         {
           "stage": 5,
-          "sp": 40000,
+          "sp": 36888,
           "limit": [
             3,
             4,
@@ -978,7 +977,7 @@
         },
         {
           "stage": 6,
-          "sp": 42000,
+          "sp": 37120,
           "limit": [
             4,
             5,
@@ -1036,12 +1035,12 @@
     },
     {
       "chapter": 6,
-      "title": "第6章 Bolde",
-      "coinPerPack": 1,
+      "title": "第6章 F5",
+      "coinPerPack": 248,
       "stages": [
         {
           "stage": 1,
-          "sp": 31000,
+          "sp": 36888,
           "limit": [
             0,
             0,
@@ -1067,7 +1066,7 @@
         },
         {
           "stage": 2,
-          "sp": 33000,
+          "sp": 37888,
           "limit": [
             0,
             1,
@@ -1108,7 +1107,7 @@
         },
         {
           "stage": 3,
-          "sp": 35000,
+          "sp": 38888,
           "limit": [
             1,
             2,
@@ -1164,7 +1163,7 @@
         },
         {
           "stage": 4,
-          "sp": 38000,
+          "sp": 40888,
           "limit": [
             2,
             3,
@@ -1220,7 +1219,7 @@
         },
         {
           "stage": 5,
-          "sp": 40000,
+          "sp": 41888,
           "limit": [
             3,
             4,
@@ -1276,7 +1275,7 @@
         },
         {
           "stage": 6,
-          "sp": 42000,
+          "sp": 38232,
           "limit": [
             4,
             5,
@@ -1334,12 +1333,12 @@
     },
     {
       "chapter": 7,
-      "title": "第7章 Absolut",
-      "coinPerPack": 1,
+      "title": "第7章 Devel",
+      "coinPerPack": 288,
       "stages": [
         {
           "stage": 1,
-          "sp": 45000,
+          "sp": 42888,
           "limit": [
             0,
             0,
@@ -1365,7 +1364,7 @@
         },
         {
           "stage": 2,
-          "sp": 50000,
+          "sp": 50896,
           "limit": [
             0,
             1,

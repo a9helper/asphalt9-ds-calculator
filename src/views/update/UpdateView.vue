@@ -12,7 +12,8 @@ const formStore = useFormStore()
 const { formExtra } = storeToRefs(formStore)
 
 const form = ref<DSData>({
-  _id: 'al-devel',
+  _id: 'gl-absolut',
+  server: 'gl',
   chapters: [],
 })
 
@@ -36,7 +37,7 @@ watch(
 
 const getEventData = async () => {
   const res = await axiosInstance.get<DSData[]>('/api/getDS')
-  const target = res.data.find((item) => item._id === 'al-devel')
+  const target = res.data.find((item) => item._id === 'gl-absolut')
   return target
 }
 onMounted(async () => {
@@ -136,7 +137,7 @@ const onSubmit = async () => {
           :min="1"
           :max="1000000"
           :controls="false"
-        />，包=
+        />，{{ form.server === 'al' ? '包' : '紫币' }}=
         <el-input-number
           v-model="task.packCount"
           style="width: 100px"
