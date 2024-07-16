@@ -1,5 +1,5 @@
 const useFormStore = defineStore(
-  'form',
+  window.location.pathname + 'form',
   () => {
     const form = ref({
       chapter: 2,

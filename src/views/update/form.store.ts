@@ -1,5 +1,5 @@
 const useFormStore = defineStore(
-  'form-update',
+  window.location.pathname + 'form-update',
   () => {
     const formExtra = ref({
       chapter: 6,
