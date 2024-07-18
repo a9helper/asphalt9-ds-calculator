@@ -78,6 +78,7 @@ const onSubmit = async () => {
     {
       password: formExtra.value.token,
       data: { ...form.value, _id: undefined },
+      _id: 'gl-absolut',
     }
   )
   if (res.data.code !== 200) {
