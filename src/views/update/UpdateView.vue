@@ -77,6 +77,7 @@ const onSubmit = async () => {
     {
       password: formExtra.value.token,
       data: { ...form.value, _id: undefined },
+      _id: 'al-devel',
     }
   )
   if (res.data.code !== 200) {
