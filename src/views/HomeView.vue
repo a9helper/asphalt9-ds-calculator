@@ -375,6 +375,7 @@ const getLimitText = (limit: string | number) => {
         这关怎么打 ❓ {{ currentChapter?.title }} 第
         {{ currentStage?.stage }} 关
       </div>
+      <!-- <div v-if="dpValid && result?.canBeSimple" class=" result-number-54">本关3个任务的包数量相同，因此也可以全部使用{{}}</div> -->
       <div v-if="dpValid">
         <div v-for="task in result?.res">
           <span class="result-number result-number-54">{{
