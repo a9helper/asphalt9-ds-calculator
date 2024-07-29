@@ -997,7 +997,7 @@
             {
               "danger": 3,
               "sp": 6270,
-              "packCount": 31
+              "packCount": 30
             },
             {
               "danger": 2,
@@ -1340,25 +1340,13 @@
           "stage": 1,
           "sp": 42888,
           "limit": [
-            0,
-            0,
-            1
+            "本阶段需要2星完全改装"
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 5225,
-              "packCount": 20
-            },
-            {
-              "danger": 3,
               "sp": 5500,
               "packCount": 21
-            },
-            {
-              "danger": 3,
-              "sp": 6050,
-              "packCount": 22
             }
           ]
         },
@@ -1366,25 +1354,13 @@
           "stage": 2,
           "sp": 50896,
           "limit": [
-            0,
-            1,
-            2
+            "本阶段需要3星7阶改装"
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 5225,
-              "packCount": 24
-            },
-            {
-              "danger": 3,
               "sp": 5500,
               "packCount": 25
-            },
-            {
-              "danger": 3,
-              "sp": 6050,
-              "packCount": 26
             }
           ]
         }
