@@ -7,7 +7,7 @@ import useFormStore from './form.store'
 // import localData from './eventData.json'
 
 const eventData = ref<DSData>({
-  _id: 'al-devel',
+  _id: 'gl-tartarus',
   chapters: [],
 })
 
