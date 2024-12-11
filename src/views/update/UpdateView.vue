@@ -12,7 +12,7 @@ const formStore = useFormStore()
 const { formExtra } = storeToRefs(formStore)
 
 const form = ref<DSData>({
-  _id: 'gl-absolut',
+  _id: 'gl-tartarus',
   server: 'gl',
   chapters: [],
 })
@@ -37,7 +37,7 @@ watch(
 
 const getEventData = async () => {
   const res = await axiosInstance.get<DSData[]>('/api/getDS')
-  const target = res.data.find((item) => item._id === 'gl-absolut')
+  const target = res.data.find((item) => item._id === 'gl-tartarus')
   return target
 }
 onMounted(async () => {
@@ -78,7 +78,7 @@ const onSubmit = async () => {
     {
       password: formExtra.value.token,
       data: { ...form.value, _id: undefined },
-      _id: 'gl-absolut',
+      _id: 'gl-tartarus',
     }
   )
   if (res.data.code !== 200) {
