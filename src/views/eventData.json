@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "第1章 A9集结",
+      "title": "1. 猎杀联会",
       "coinPerPack": 1,
       "stages": [
         {
@@ -17,7 +17,7 @@
             {
               "danger": 0,
               "sp": 1000,
-              "packCount": 700
+              "packCount": 1050
             }
           ]
         },
@@ -32,18 +32,18 @@
           "tasks": [
             {
               "danger": 0,
-              "sp": 1500,
-              "packCount": 480
+              "sp": 3350,
+              "packCount": 720
             },
             {
               "danger": 0,
-              "sp": 2250,
-              "packCount": 640
+              "sp": 5000,
+              "packCount": 960
             },
             {
               "danger": 0,
-              "sp": 3500,
-              "packCount": 800
+              "sp": 5000,
+              "packCount": 1200
             }
           ]
         },
@@ -58,18 +58,18 @@
           "tasks": [
             {
               "danger": 0,
-              "sp": 1500,
-              "packCount": 540
+              "sp": 3350,
+              "packCount": 810
             },
             {
               "danger": 0,
-              "sp": 2250,
-              "packCount": 720
+              "sp": 5000,
+              "packCount": 1080
             },
             {
               "danger": 0,
-              "sp": 3500,
-              "packCount": 900
+              "sp": 8000,
+              "packCount": 1350
             }
           ]
         }
@@ -77,7 +77,7 @@
     },
     {
       "chapter": 2,
-      "title": "第2章 Mission R",
+      "title": "2. 暗影幽灵 Mission R",
       "coinPerPack": 1,
       "stages": [
         {
@@ -263,7 +263,7 @@
     },
     {
       "chapter": 3,
-      "title": "第3章 Enzo",
+      "title": "3. 生存联盟 Enzo",
       "coinPerPack": 1,
       "stages": [
         {
@@ -505,7 +505,7 @@
     },
     {
       "chapter": 4,
-      "title": "第4章 SCV12",
+      "title": "4. 继承者踪迹 SCV12",
       "coinPerPack": 1,
       "stages": [
         {
@@ -747,7 +747,7 @@
     },
     {
       "chapter": 5,
-      "title": "第5章 SF90 XX",
+      "title": "5. 阴影之路 SF90 XX",
       "coinPerPack": 1,
       "stages": [
         {
@@ -1045,7 +1045,7 @@
     },
     {
       "chapter": 6,
-      "title": "第6章 Bolde",
+      "title": "6. 驱动未来 Bolde",
       "coinPerPack": 1,
       "stages": [
         {
@@ -1343,7 +1343,7 @@
     },
     {
       "chapter": 7,
-      "title": "第7章 Absolut",
+      "title": "7. 麋鹿的遗产 Absolut",
       "coinPerPack": 1,
       "stages": [
         {
@@ -1352,7 +1352,7 @@
           "limit": [
             0,
             0,
-            1
+            "本阶段需要2星完全改装"
           ],
           "tasks": [
             {
@@ -1377,8 +1377,8 @@
           "sp": 50000,
           "limit": [
             0,
-            1,
-            2
+            0,
+            "本阶段需要3星7阶改装"
           ],
           "tasks": [
             {
