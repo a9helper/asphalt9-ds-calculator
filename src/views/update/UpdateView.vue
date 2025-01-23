@@ -3,6 +3,8 @@ import axios from 'axios'
 import useFormStore from './form.store'
 import { Check } from '@element-plus/icons-vue'
 import { ElMessageBox, ElMessage } from 'element-plus'
+import config from '@/config'
+
 const axiosInstance = axios.create({
   baseURL: import.meta.env.VITE_UNI_ROUTER_BASE_URL,
 })
@@ -12,7 +14,7 @@ const formStore = useFormStore()
 const { formExtra } = storeToRefs(formStore)
 
 const form = ref<DSData>({
-  _id: 'al-devel',
+  _id: config._id,
   chapters: [],
 })
 
@@ -36,7 +38,7 @@ watch(
 
 const getEventData = async () => {
   const res = await axiosInstance.get<DSData[]>('/api/getDS')
-  const target = res.data.find((item) => item._id === 'al-devel')
+  const target = res.data.find((item) => item._id === config._id)
   return target
 }
 onMounted(async () => {
@@ -77,7 +79,7 @@ const onSubmit = async () => {
     {
       password: formExtra.value.token,
       data: { ...form.value, _id: undefined },
-      _id: 'al-devel',
+      _id: config._id,
     }
   )
   if (res.data.code !== 200) {

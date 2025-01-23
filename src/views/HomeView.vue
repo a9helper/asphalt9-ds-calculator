@@ -3,11 +3,12 @@ import dp from './dp'
 
 import axios from 'axios'
 import useFormStore from './form.store'
+import config from '@/config'
 
 // import localData from './eventData.json'
 
 const eventData = ref<DSData>({
-  _id: 'al-devel',
+  _id: config._id,
   chapters: [],
 })
 
@@ -25,7 +26,7 @@ const getEventData = async () => {
   // if (debug) {
   //   res2 = [localData] as any
   // }
-  const target = res2.find((item) => item._id === 'al-devel')
+  const target = res2.find((item) => item._id === config._id)
   if (target) {
     for (let chapter of target.chapters) {
       for (let stage of chapter.stages) {

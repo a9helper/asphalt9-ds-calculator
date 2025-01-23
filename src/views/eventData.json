@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "闪电风暴",
+      "title": "1. 车手联会",
       "coinPerPack": 48,
       "stages": [
         {
@@ -67,7 +67,7 @@
     },
     {
       "chapter": 2,
-      "title": "迷雾重重 AMG",
+      "title": "2. Mission R",
       "coinPerPack": 88,
       "stages": [
         {
@@ -253,7 +253,7 @@
     },
     {
       "chapter": 3,
-      "title": "危险陷阱 Diablo",
+      "title": "3. Enzo",
       "coinPerPack": 128,
       "stages": [
         {
@@ -495,7 +495,7 @@
     },
     {
       "chapter": 4,
-      "title": "凶猛对决 911GT3",
+      "title": "4. SCV12",
       "coinPerPack": 168,
       "stages": [
         {
@@ -737,7 +737,7 @@
     },
     {
       "chapter": 5,
-      "title": "棘手问题 Zagato",
+      "title": "5. SF90 XX",
       "coinPerPack": 208,
       "stages": [
         {
@@ -1035,7 +1035,7 @@
     },
     {
       "chapter": 6,
-      "title": "未知风险 F5",
+      "title": "6. Bolide",
       "coinPerPack": 248,
       "stages": [
         {
@@ -1333,7 +1333,7 @@
     },
     {
       "chapter": 7,
-      "title": "守护未来 Devel",
+      "title": "7. 银电",
       "coinPerPack": 288,
       "stages": [
         {
@@ -1344,7 +1344,7 @@
           ],
           "tasks": [
             {
-              "danger": 3,
+              "danger": 0,
               "sp": 5500,
               "packCount": 21
             }
@@ -1358,7 +1358,7 @@
           ],
           "tasks": [
             {
-              "danger": 3,
+              "danger": 0,
               "sp": 5500,
               "packCount": 25
             }
