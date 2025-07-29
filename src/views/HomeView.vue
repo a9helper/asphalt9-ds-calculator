@@ -8,7 +8,7 @@ import useFormStore from './form.store'
 
 const eventData = ref<DSData>({
   _id: 'gl-tartarus',
-  server: 'al',
+  server: 'gl',
   chapters: [],
 })
 
@@ -26,7 +26,7 @@ const getEventData = async () => {
   // if (debug) {
   //   res2 = [localData] as any
   // }
-  const target = res2.find((item) => item._id === 'gl-tartarus')
+  const target = res2.find((item) => item._id === 'gl-emperium')
   if (target) {
     for (let chapter of target.chapters) {
       for (let stage of chapter.stages) {
