@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "1. 车联出击",
+      "title": "1. 神秘比赛",
       "coinPerPack": 48,
       "stages": [
         {
@@ -67,7 +67,7 @@
     },
     {
       "chapter": 2,
-      "title": "2. XKR-S",
+      "title": "2.深藏不露 XKR-S",
       "coinPerPack": 88,
       "stages": [
         {
@@ -253,7 +253,7 @@
     },
     {
       "chapter": 3,
-      "title": "3. MC20",
+      "title": "3.打开天窗 MC20",
       "coinPerPack": 128,
       "stages": [
         {
@@ -495,7 +495,7 @@
     },
     {
       "chapter": 4,
-      "title": "4. Asfane",
+      "title": "4.灰熊出击 Asfane",
       "coinPerPack": 168,
       "stages": [
         {
@@ -737,7 +737,7 @@
     },
     {
       "chapter": 5,
-      "title": "5. Sabre",
+      "title": "5.亦敌亦友 Sabre",
       "coinPerPack": 208,
       "stages": [
         {
@@ -1035,7 +1035,7 @@
     },
     {
       "chapter": 6,
-      "title": "6. CC850",
+      "title": "6.危险边缘 CC850",
       "coinPerPack": 248,
       "stages": [
         {
@@ -1333,7 +1333,7 @@
     },
     {
       "chapter": 7,
-      "title": "7. Nevera R",
+      "title": "7. 火线追击 Nevera R",
       "coinPerPack": 288,
       "stages": [
         {
