@@ -1,5 +1,5 @@
 const config = {
-  _id: 'al-silver',
+  _id: 'al-neverar',
 }
 
 export default config

@@ -3,7 +3,7 @@ const eventData: DSData = {
   chapters: [
     {
       chapter: 1,
-      title: '暗流涌动（第一章）',
+      title: '（第一章）',
       coinPerPack: 48,
       stages: [
         {
@@ -32,7 +32,7 @@ const eventData: DSData = {
     },
     {
       chapter: 2,
-      title: '如履薄冰（XJR）',
+      title: '第 2 章：XKR-S',
       coinPerPack: 88,
       stages: [
         {

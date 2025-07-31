@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "1. 车手联会",
+      "title": "1. 车联出击",
       "coinPerPack": 48,
       "stages": [
         {
@@ -67,7 +67,7 @@
     },
     {
       "chapter": 2,
-      "title": "2. Mission R",
+      "title": "2. XKR-S",
       "coinPerPack": 88,
       "stages": [
         {
@@ -253,7 +253,7 @@
     },
     {
       "chapter": 3,
-      "title": "3. Enzo",
+      "title": "3. MC20",
       "coinPerPack": 128,
       "stages": [
         {
@@ -495,7 +495,7 @@
     },
     {
       "chapter": 4,
-      "title": "4. SCV12",
+      "title": "4. Asfane",
       "coinPerPack": 168,
       "stages": [
         {
@@ -737,7 +737,7 @@
     },
     {
       "chapter": 5,
-      "title": "5. SF90 XX",
+      "title": "5. Sabre",
       "coinPerPack": 208,
       "stages": [
         {
@@ -1035,7 +1035,7 @@
     },
     {
       "chapter": 6,
-      "title": "6. Bolide",
+      "title": "6. CC850",
       "coinPerPack": 248,
       "stages": [
         {
@@ -1333,7 +1333,7 @@
     },
     {
       "chapter": 7,
-      "title": "7. 银电",
+      "title": "7. Nevera R",
       "coinPerPack": 288,
       "stages": [
         {
@@ -1345,8 +1345,18 @@
           "tasks": [
             {
               "danger": 0,
+              "sp": 5225,
+              "packCount": 20
+            },
+            {
+              "danger": 0,
               "sp": 5500,
               "packCount": 21
+            },
+            {
+              "danger": 0,
+              "sp": 6050,
+              "packCount": 22
             }
           ]
         },
@@ -1359,8 +1369,18 @@
           "tasks": [
             {
               "danger": 0,
+              "sp": 5225,
+              "packCount": 24
+            },
+            {
+              "danger": 0,
               "sp": 5500,
               "packCount": 25
+            },
+            {
+              "danger": 0,
+              "sp": 6050,
+              "packCount": 26
             }
           ]
         }
