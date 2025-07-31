@@ -495,7 +495,7 @@
     },
     {
       "chapter": 4,
-      "title": "4. 荣耀回响 600 LT 待更新",
+      "title": "4. 荣耀回响 600 LT",
       "coinPerPack": 1,
       "stages": [
         {
@@ -504,23 +504,23 @@
           "limit": [
             0,
             0,
-            2
+            1
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 4500,
-              "packCount": 2100
+              "sp": 8250,
+              "packCount": 4070
             },
             {
               "danger": 3,
-              "sp": 6750,
-              "packCount": 2800
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 3,
-              "sp": 10500,
-              "packCount": 3500
+              "sp": 99999,
+              "packCount": 0
             }
           ]
         },
@@ -529,38 +529,38 @@
           "sp": 37000,
           "limit": [
             0,
-            2,
-            3
+            1,
+            2
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 4500,
-              "packCount": 2400
+              "sp": 12350,
+              "packCount": 6200
             },
             {
               "danger": 3,
-              "sp": 6750,
-              "packCount": 3200
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 3,
-              "sp": 10500,
-              "packCount": 4000
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 2,
-              "sp": 2700,
+              "sp": 3900,
               "packCount": 600
             },
             {
               "danger": 2,
-              "sp": 4050,
+              "sp": 5850,
               "packCount": 800
             },
             {
               "danger": 2,
-              "sp": 6300,
+              "sp": 9100,
               "packCount": 1000
             }
           ]
@@ -569,54 +569,54 @@
           "stage": 3,
           "sp": 40000,
           "limit": [
+            1,
             2,
-            3,
-            4
+            3
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 4500,
-              "packCount": 2700
+              "sp": 40000,
+              "packCount": 17430
             },
             {
               "danger": 3,
-              "sp": 6750,
-              "packCount": 3600
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 3,
-              "sp": 10500,
-              "packCount": 4500
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 2,
-              "sp": 2700,
+              "sp": 3900,
               "packCount": 675
             },
             {
               "danger": 2,
-              "sp": 4050,
+              "sp": 5850,
               "packCount": 900
             },
             {
               "danger": 2,
-              "sp": 6300,
+              "sp": 9100,
               "packCount": 1125
             },
             {
               "danger": 1,
-              "sp": 1200,
+              "sp": 1800,
               "packCount": 270
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 2700,
               "packCount": 360
             },
             {
               "danger": 1,
-              "sp": 2800,
+              "sp": 4200,
               "packCount": 450
             }
           ]
@@ -625,54 +625,54 @@
           "stage": 4,
           "sp": 42000,
           "limit": [
+            2,
             3,
-            4,
-            5
+            4
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 4500,
-              "packCount": 3000
+              "sp": 42000,
+              "packCount": 24200
             },
             {
               "danger": 3,
-              "sp": 6750,
-              "packCount": 4000
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 3,
-              "sp": 10500,
-              "packCount": 5000
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 2,
-              "sp": 2700,
+              "sp": 3900,
               "packCount": 750
             },
             {
               "danger": 2,
-              "sp": 4050,
+              "sp": 5850,
               "packCount": 1000
             },
             {
               "danger": 2,
-              "sp": 6300,
+              "sp": 9100,
               "packCount": 1250
             },
             {
               "danger": 1,
-              "sp": 1200,
+              "sp": 1800,
               "packCount": 300
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 2700,
               "packCount": 400
             },
             {
               "danger": 1,
-              "sp": 2800,
+              "sp": 4200,
               "packCount": 500
             }
           ]
@@ -682,53 +682,53 @@
           "sp": 44000,
           "limit": [
             3,
-            5,
-            6
+            4,
+            5
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 4500,
-              "packCount": 3300
+              "sp": 44000,
+              "packCount": 26620
             },
             {
               "danger": 3,
-              "sp": 6750,
-              "packCount": 4400
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 3,
-              "sp": 10500,
-              "packCount": 5500
+              "sp": 99999,
+              "packCount": 0
             },
             {
               "danger": 2,
-              "sp": 2700,
+              "sp": 3900,
               "packCount": 825
             },
             {
               "danger": 2,
-              "sp": 4050,
+              "sp": 5850,
               "packCount": 1100
             },
             {
               "danger": 2,
-              "sp": 6300,
+              "sp": 9100,
               "packCount": 1375
             },
             {
               "danger": 1,
-              "sp": 1200,
+              "sp": 1800,
               "packCount": 330
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 2700,
               "packCount": 440
             },
             {
               "danger": 1,
-              "sp": 2800,
+              "sp": 4200,
               "packCount": 550
             }
           ]
