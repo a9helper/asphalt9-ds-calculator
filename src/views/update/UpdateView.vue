@@ -12,7 +12,7 @@ const formStore = useFormStore()
 const { formExtra } = storeToRefs(formStore)
 
 const form = ref<DSData>({
-  _id: 'gl-tartarus',
+  _id: 'gl-imperium',
   server: 'gl',
   chapters: [],
 })
@@ -37,7 +37,7 @@ watch(
 
 const getEventData = async () => {
   const res = await axiosInstance.get<DSData[]>('/api/getDS')
-  const target = res.data.find((item) => item._id === 'gl-tartarus')
+  const target = res.data.find((item) => item._id === 'gl-imperium')
   return target
 }
 onMounted(async () => {
@@ -78,7 +78,7 @@ const onSubmit = async () => {
     {
       password: formExtra.value.token,
       data: { ...form.value, _id: undefined },
-      _id: 'gl-tartarus',
+      _id: 'gl-imperium',
     }
   )
   if (res.data.code !== 200) {
@@ -142,7 +142,7 @@ const onSubmit = async () => {
         <el-input-number
           v-model="task.packCount"
           style="width: 100px"
-          :min="1"
+          :min="0"
           :max="1000000"
           :controls="false"
         />

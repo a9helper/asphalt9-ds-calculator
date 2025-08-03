@@ -2,7 +2,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "1. 往日赛道",
+      "title": "1. 暗中谋划",
       "coinPerPack": 1,
       "stages": [
         {
@@ -17,7 +17,7 @@
             {
               "danger": 0,
               "sp": 1000,
-              "packCount": 1020
+              "packCount": 1050
             }
           ]
         },
@@ -33,12 +33,17 @@
             {
               "danger": 0,
               "sp": 3350,
-              "packCount": 1170
+              "packCount": 720
             },
             {
               "danger": 0,
               "sp": 5000,
-              "packCount": 1170
+              "packCount": 960
+            },
+            {
+              "danger": 0,
+              "sp": 5000,
+              "packCount": 1200
             }
           ]
         },
@@ -54,12 +59,17 @@
             {
               "danger": 0,
               "sp": 3350,
-              "packCount": 1310
+              "packCount": 810
             },
             {
               "danger": 0,
               "sp": 5000,
-              "packCount": 1310
+              "packCount": 1080
+            },
+            {
+              "danger": 0,
+              "sp": 8000,
+              "packCount": 1350
             }
           ]
         }
@@ -67,7 +77,7 @@
     },
     {
       "chapter": 2,
-      "title": "2. 地下熔炉 Survolt",
+      "title": "2. 秘密锦标赛 XKR",
       "coinPerPack": 1,
       "stages": [
         {
@@ -81,18 +91,18 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 3750,
-              "packCount": 2040
+              "sp": 2700,
+              "packCount": 1050
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 4050,
+              "packCount": 1400
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6300,
+              "packCount": 1750
             }
           ]
         },
@@ -107,32 +117,32 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 6700,
-              "packCount": 3100
+              "sp": 2700,
+              "packCount": 1200
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 4050,
+              "packCount": 1600
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6300,
+              "packCount": 2000
             },
             {
               "danger": 2,
-              "sp": 2340,
+              "sp": 1620,
               "packCount": 300
             },
             {
               "danger": 2,
-              "sp": 3510,
+              "sp": 2430,
               "packCount": 400
             },
             {
               "danger": 2,
-              "sp": 5460,
+              "sp": 3780,
               "packCount": 500
             }
           ]
@@ -148,47 +158,47 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 23000,
-              "packCount": 8720
+              "sp": 2700,
+              "packCount": 1350
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 4050,
+              "packCount": 1800
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6300,
+              "packCount": 2250
             },
             {
               "danger": 2,
-              "sp": 2340,
+              "sp": 1620,
               "packCount": 338
             },
             {
               "danger": 2,
-              "sp": 3510,
+              "sp": 2430,
               "packCount": 450
             },
             {
               "danger": 2,
-              "sp": 5460,
+              "sp": 3780,
               "packCount": 563
             },
             {
               "danger": 1,
-              "sp": 1080,
+              "sp": 720,
               "packCount": 135
             },
             {
               "danger": 1,
-              "sp": 1620,
+              "sp": 1080,
               "packCount": 180
             },
             {
               "danger": 1,
-              "sp": 2520,
+              "sp": 1680,
               "packCount": 225
             }
           ]
@@ -204,47 +214,47 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 25000,
-              "packCount": 12100
+              "sp": 2700,
+              "packCount": 1500
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 4050,
+              "packCount": 2000
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6300,
+              "packCount": 2500
             },
             {
               "danger": 2,
-              "sp": 2340,
+              "sp": 1620,
               "packCount": 375
             },
             {
               "danger": 2,
-              "sp": 3510,
+              "sp": 2430,
               "packCount": 500
             },
             {
               "danger": 2,
-              "sp": 5460,
+              "sp": 3780,
               "packCount": 625
             },
             {
               "danger": 1,
-              "sp": 1080,
+              "sp": 720,
               "packCount": 150
             },
             {
               "danger": 1,
-              "sp": 1620,
+              "sp": 1080,
               "packCount": 200
             },
             {
               "danger": 1,
-              "sp": 2520,
+              "sp": 1680,
               "packCount": 250
             }
           ]
@@ -253,7 +263,7 @@
     },
     {
       "chapter": 3,
-      "title": "3. 驶入风暴 IE",
+      "title": "3. 爬虫现身 MC20",
       "coinPerPack": 1,
       "stages": [
         {
@@ -267,18 +277,18 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 5500,
-              "packCount": 3260
+              "sp": 3600,
+              "packCount": 1680
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 5400,
+              "packCount": 2240
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 8400,
+              "packCount": 2800
             }
           ]
         },
@@ -293,32 +303,32 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 9000,
-              "packCount": 4500
+              "sp": 3600,
+              "packCount": 1920
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 5400,
+              "packCount": 2560
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 8400,
+              "packCount": 3200
             },
             {
               "danger": 2,
-              "sp": 3120,
+              "sp": 2160,
               "packCount": 480
             },
             {
               "danger": 2,
-              "sp": 4680,
+              "sp": 3240,
               "packCount": 640
             },
             {
               "danger": 2,
-              "sp": 7280,
+              "sp": 5040,
               "packCount": 800
             }
           ]
@@ -334,47 +344,47 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 30000,
-              "packCount": 11330
+              "sp": 3600,
+              "packCount": 2160
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 5400,
+              "packCount": 2880
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 8400,
+              "packCount": 3600
             },
             {
               "danger": 2,
-              "sp": 3120,
+              "sp": 2160,
               "packCount": 540
             },
             {
               "danger": 2,
-              "sp": 4680,
+              "sp": 3240,
               "packCount": 720
             },
             {
               "danger": 2,
-              "sp": 7280,
+              "sp": 5040,
               "packCount": 900
             },
             {
               "danger": 1,
-              "sp": 1440,
+              "sp": 960,
               "packCount": 216
             },
             {
               "danger": 1,
-              "sp": 2160,
+              "sp": 1440,
               "packCount": 288
             },
             {
               "danger": 1,
-              "sp": 3360,
+              "sp": 2240,
               "packCount": 360
             }
           ]
@@ -390,47 +400,47 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 33000,
-              "packCount": 15500
+              "sp": 3600,
+              "packCount": 2400
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 5400,
+              "packCount": 3200
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 8400,
+              "packCount": 4000
             },
             {
               "danger": 2,
-              "sp": 3120,
+              "sp": 2160,
               "packCount": 600
             },
             {
               "danger": 2,
-              "sp": 4680,
+              "sp": 3240,
               "packCount": 800
             },
             {
               "danger": 2,
-              "sp": 7280,
+              "sp": 5040,
               "packCount": 1000
             },
             {
               "danger": 1,
-              "sp": 1440,
+              "sp": 960,
               "packCount": 240
             },
             {
               "danger": 1,
-              "sp": 2160,
+              "sp": 1440,
               "packCount": 320
             },
             {
               "danger": 1,
-              "sp": 3360,
+              "sp": 2240,
               "packCount": 400
             }
           ]
@@ -446,47 +456,47 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 35000,
-              "packCount": 17040
+              "sp": 3600,
+              "packCount": 2640
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 5400,
+              "packCount": 3520
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 8400,
+              "packCount": 4400
             },
             {
               "danger": 2,
-              "sp": 3120,
+              "sp": 2160,
               "packCount": 660
             },
             {
               "danger": 2,
-              "sp": 4680,
+              "sp": 3240,
               "packCount": 880
             },
             {
               "danger": 2,
-              "sp": 7280,
+              "sp": 5040,
               "packCount": 1100
             },
             {
               "danger": 1,
-              "sp": 1440,
+              "sp": 960,
               "packCount": 264
             },
             {
               "danger": 1,
-              "sp": 2160,
+              "sp": 1440,
               "packCount": 352
             },
             {
               "danger": 1,
-              "sp": 3360,
+              "sp": 2240,
               "packCount": 440
             }
           ]
@@ -495,7 +505,7 @@
     },
     {
       "chapter": 4,
-      "title": "4. 荣耀回响 600 LT",
+      "title": "4. 巨熊挑战 Asfane",
       "coinPerPack": 1,
       "stages": [
         {
@@ -504,23 +514,23 @@
           "limit": [
             0,
             0,
-            1
+            2
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 8250,
-              "packCount": 4070
+              "sp": 4500,
+              "packCount": 2100
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 2800
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 3500
             }
           ]
         },
@@ -529,38 +539,38 @@
           "sp": 37000,
           "limit": [
             0,
-            1,
-            2
+            2,
+            3
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 12350,
-              "packCount": 6200
+              "sp": 4500,
+              "packCount": 2400
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 3200
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 4000
             },
             {
               "danger": 2,
-              "sp": 3900,
+              "sp": 2700,
               "packCount": 600
             },
             {
               "danger": 2,
-              "sp": 5850,
+              "sp": 4050,
               "packCount": 800
             },
             {
               "danger": 2,
-              "sp": 9100,
+              "sp": 6300,
               "packCount": 1000
             }
           ]
@@ -569,54 +579,54 @@
           "stage": 3,
           "sp": 40000,
           "limit": [
-            1,
             2,
-            3
+            3,
+            4
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 40000,
-              "packCount": 17430
+              "sp": 4500,
+              "packCount": 2700
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 3600
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 4500
             },
             {
               "danger": 2,
-              "sp": 3900,
+              "sp": 2700,
               "packCount": 675
             },
             {
               "danger": 2,
-              "sp": 5850,
+              "sp": 4050,
               "packCount": 900
             },
             {
               "danger": 2,
-              "sp": 9100,
+              "sp": 6300,
               "packCount": 1125
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 1200,
               "packCount": 270
             },
             {
               "danger": 1,
-              "sp": 2700,
+              "sp": 1800,
               "packCount": 360
             },
             {
               "danger": 1,
-              "sp": 4200,
+              "sp": 2800,
               "packCount": 450
             }
           ]
@@ -625,54 +635,54 @@
           "stage": 4,
           "sp": 42000,
           "limit": [
-            2,
             3,
-            4
+            4,
+            5
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 42000,
-              "packCount": 24200
+              "sp": 4500,
+              "packCount": 3000
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 4000
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 5000
             },
             {
               "danger": 2,
-              "sp": 3900,
+              "sp": 2700,
               "packCount": 750
             },
             {
               "danger": 2,
-              "sp": 5850,
+              "sp": 4050,
               "packCount": 1000
             },
             {
               "danger": 2,
-              "sp": 9100,
+              "sp": 6300,
               "packCount": 1250
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 1200,
               "packCount": 300
             },
             {
               "danger": 1,
-              "sp": 2700,
+              "sp": 1800,
               "packCount": 400
             },
             {
               "danger": 1,
-              "sp": 4200,
+              "sp": 2800,
               "packCount": 500
             }
           ]
@@ -682,53 +692,53 @@
           "sp": 44000,
           "limit": [
             3,
-            4,
-            5
+            5,
+            6
           ],
           "tasks": [
             {
               "danger": 3,
-              "sp": 44000,
-              "packCount": 26620
+              "sp": 4500,
+              "packCount": 3300
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 4400
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 5500
             },
             {
               "danger": 2,
-              "sp": 3900,
+              "sp": 2700,
               "packCount": 825
             },
             {
               "danger": 2,
-              "sp": 5850,
+              "sp": 4050,
               "packCount": 1100
             },
             {
               "danger": 2,
-              "sp": 9100,
+              "sp": 6300,
               "packCount": 1375
             },
             {
               "danger": 1,
-              "sp": 1800,
+              "sp": 1200,
               "packCount": 330
             },
             {
               "danger": 1,
-              "sp": 2700,
+              "sp": 1800,
               "packCount": 440
             },
             {
               "danger": 1,
-              "sp": 4200,
+              "sp": 2800,
               "packCount": 550
             }
           ]
@@ -737,7 +747,7 @@
     },
     {
       "chapter": 5,
-      "title": "5. 分道扬镳 Cinque",
+      "title": "5. 比赛入侵 Sabre",
       "coinPerPack": 1,
       "stages": [
         {
@@ -751,18 +761,18 @@
           "tasks": [
             {
               "danger": 3,
-              "sp": 7750,
-              "packCount": 4880
+              "sp": 4500,
+              "packCount": 2520
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 6750,
+              "packCount": 3360
             },
             {
               "danger": 3,
-              "sp": 99999,
-              "packCount": 0
+              "sp": 10500,
+              "packCount": 4200
             }
           ]
         },
@@ -1035,7 +1045,7 @@
     },
     {
       "chapter": 6,
-      "title": "6. 极速攀升 Absolut",
+      "title": "6. 如履薄冰 CC850",
       "coinPerPack": 1,
       "stages": [
         {
@@ -1333,7 +1343,7 @@
     },
     {
       "chapter": 7,
-      "title": "7. 帝国余晖 Imperium",
+      "title": "7. 追逐 Tartarus",
       "coinPerPack": 1,
       "stages": [
         {
